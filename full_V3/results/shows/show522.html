@@ -1,0 +1,566 @@
+<html>
+<style>
+html {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+	body {
+		position:relative;
+		top:50px;
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		text-align:center;
+		font-size:20px;
+		background:url(../assets/images/dark-canvas.gif);
+		color: #FFFFFF;
+		}
+p { 
+
+	margin-top: 0; 
+
+	text-align: justify;
+
+	}
+
+h3 { 
+
+	font: italic normal 1.4em georgia, sans-serif;
+
+	letter-spacing: 1px; 
+
+	margin-bottom: 0; 
+
+	color: #7D775C;
+
+	}
+
+a:link { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #B7A5DF;
+
+	}
+
+a:visited { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #D4CDDC;
+
+	}
+
+a:hover, a:focus, a:active { 
+
+	text-decoration: underline; 
+
+	color: #9685BA;
+
+	}
+
+abbr {
+
+	border-bottom: none;
+
+	}
+
+
+
+
+
+/* specific divs */
+
+.page-wrapper { 
+
+	background: url(zen-bg.jpg) no-repeat top left; 
+
+	padding: 0 175px 0 110px;  
+
+	margin: 0; 
+
+	position: relative;
+
+	}
+
+
+
+.intro { 
+
+	min-width: 470px;
+
+	width: 100%;
+
+	}
+
+
+
+header h1 { 
+
+	background: transparent url(h1.gif) no-repeat top left;
+
+	margin-top: 10px;
+
+	display: block;
+
+	width: 219px;
+
+	height: 87px;
+
+	float: left;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header h2 { 
+
+	background: transparent url(h2.gif) no-repeat top left; 
+
+	margin-top: 58px; 
+
+	margin-bottom: 40px; 
+
+	width: 200px; 
+
+	height: 18px; 
+
+	float: right;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header {
+
+	padding-top: 20px;
+
+	height: 87px;
+
+}
+
+
+
+.summary {
+
+	clear: both; 
+
+	margin: 20px 20px 20px 10px; 
+
+	width: 160px; 
+
+	float: left;
+
+	}
+
+.summary p {
+
+	font: italic 1.1em/2.2 georgia; 
+
+	text-align: center;
+
+	}
+
+
+
+.preamble {
+
+	clear: right; 
+
+	padding: 0px 10px 0 10px;
+
+	}
+
+.supporting {	
+
+	padding-left: 10px; 
+
+	margin-bottom: 40px;
+
+	}
+
+
+
+footer { 
+
+	text-align: center; 
+
+	}
+
+footer a:link, footer a:visited { 
+
+	margin-right: 20px; 
+
+	}
+
+
+
+.sidebar {
+
+	margin-left: 600px; 
+
+	position: absolute; 
+
+	top: 0; 
+
+	right: 0;
+
+	}
+
+.sidebar .wrapper { 
+
+	font: 10px verdana, sans-serif; 
+
+	background: transparent url(paper-bg.jpg) top left repeat-y; 
+
+	padding: 10px; 
+
+	margin-top: 150px; 
+
+	width: 130px; 
+
+	}
+
+.sidebar h3.select { 
+
+	background: transparent url(h3.gif) no-repeat top left; 
+
+	margin: 10px 0 5px 0; 
+
+	width: 97px; 
+
+	height: 16px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.archives { 
+
+	background: transparent url(h5.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:57px; 
+
+	height: 14px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.resources { 
+
+	background: transparent url(h6.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:63px; 
+
+	height: 10px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+
+
+
+
+.sidebar ul {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+.sidebar li {
+
+	line-height: 1.3em; 
+
+	background: transparent url(cr1.gif) no-repeat top center; 
+
+	display: block; 
+
+	padding-top: 5px; 
+
+	margin-bottom: 5px;
+
+	list-style-type: none;
+
+	}
+
+.sidebar li a:link {
+
+	color: #988F5E;
+
+	}
+
+.sidebar li a:visited {
+
+	color: #B3AE94;
+
+	}
+
+
+
+
+
+.extra1 {
+
+	background: transparent url(cr2.gif) top left no-repeat; 
+
+	position: absolute; 
+
+	top: 40px; 
+
+	right: 0; 
+
+	width: 148px; 
+
+	height: 110px;
+
+	}
+	
+	h1 + ol{ 
+		color: #B7A5DF;
+		float: left;
+		margin-left: 18%;
+	}
+	h1 + ol + ol { 
+		float: right;
+		color: #0685BA;
+		margin-right: 18%;
+	
+	}
+	#piechart {
+	    clear: both;
+		text-align:center;
+		margin-left: 18%;
+	
+	}
+	#button
+	{
+		padding-top:50px;
+	}
+	
+	input
+	{
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		color: #FFFFFF;
+		background-color: transparent;
+		font-size:30px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 10px;
+	}</style>
+<body>
+<h1>Show 522: Malibu Country</h1>
+<p> Rating: NaN</p>
+<p> Genre: Reality-TV</p>
+<p> Plot: N/A</p>
+<p> Poster: <img src="http://ia.media-imdb.com/images/M/MV5BMTgxMjkzMzUwOF5BMl5BanBnXkFtZTcwNjkzOTgxOQ@@._V1_SX300.jpg"> </p>
+<ol>
+<li>dad: 0.004894284517149886</li>
+<li>mom: 0.0046277208831989386</li>
+<li>hey: 0.004041004265310657</li>
+<li>dude: 0.003798952199643804</li>
+<li>wan: 0.0036081986015456037</li>
+<li>ass: 0.003432899790050761</li>
+<li>sex: 0.003400715611342044</li>
+<li>cool: 0.003253507010934231</li>
+<li>fun: 0.003220892475030051</li>
+<li>party: 0.0029799770035739827</li>
+<li>car: 0.0029432513771834395</li>
+<li>date: 0.002779481131516929</li>
+<li>ooh: 0.0027512039738456042</li>
+<li>hot: 0.0026922167590301502</li>
+<li>honey: 0.002683569288397206</li>
+<li>huh: 0.0026444765607801794</li>
+<li>crazy: 0.0025712155184842104</li>
+<li>shit: 0.0025052310868496357</li>
+<li>game: 0.002489069242560433</li>
+<li>whoa: 0.0024720515955988704</li>
+<li>school: 0.0024694669204385674</li>
+<li>charlie: 0.002409796298360469</li>
+<li>dog: 0.0023896331098362603</li>
+<li>stupid: 0.0023314256437282676</li>
+<li>funny: 0.0023245273164012466</li>
+<li>wife: 0.002317263615323979</li>
+<li>marry: 0.0022471668707270743</li>
+<li>bitch: 0.0020538763275536314</li>
+<li>ray: 0.002027165016573577</li>
+<li>bye: 0.0020257393544405324</li>
+<li>gay: 0.002020945328953055</li>
+<li>damn: 0.002011283723836571</li>
+<li>movie: 0.0019365497748134012</li>
+<li>win: 0.0019040249355350546</li>
+<li>sweet: 0.0018448329411108362</li>
+<li>weird: 0.0018433263629859472</li>
+<li>phone: 0.0018045875239752701</li>
+<li>dinner: 0.0017919097470129558</li>
+<li>ball: 0.0017434860626542913</li>
+<li>buddy: 0.0017356186455000544</li>
+<li>peter: 0.0017094822664247922</li>
+<li>sir: 0.0016690357580962081</li>
+<li>write: 0.001668538589953404</li>
+<li>beautiful: 0.001633457128882164</li>
+<li>hair: 0.0016261826020472288</li>
+<li>suck: 0.001559808915493043</li>
+<li>brother: 0.0015588375325513578</li>
+<li>laugh: 0.0015555693900120076</li>
+<li>black: 0.0015150507841958124</li>
+<li>dress: 0.0015131508852591958</li>
+</ol>
+<ol>
+<li>Topic7: 0.9997390147020244</li>
+<li>Topic18: 4.075571349178043E-5</li>
+<li>Topic14: 3.1673410183341706E-5</li>
+<li>Topic9: 1.6961653533803994E-5</li>
+<li>Topic15: 1.612594074700972E-5</li>
+<li>TopicOne: 1.4869327966652435E-5</li>
+<li>TopicZero: 1.4739659717151571E-5</li>
+<li>Topic11: 1.4628894304427107E-5</li>
+<li>TopicThree: 1.2064851361574377E-5</li>
+<li>Topic12: 1.190957597186958E-5</li>
+<li>Topic4: 1.0023808655213032E-5</li>
+<li>TopicTwo: 9.570960389700524E-6</li>
+<li>Topic17: 9.557763319945036E-6</li>
+<li>Topic6: 9.326679005816913E-6</li>
+<li>Topic16: 9.148188379649788E-6</li>
+<li>Topic10: 9.1198583753557E-6</li>
+<li>Topic5: 9.075454247464844E-6</li>
+<li>Topic8: 8.229475106471397E-6</li>
+<li>Topic19: 7.425790434300427E-6</li>
+<li>Topic13: 5.778292784191598E-6</li>
+</ol>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart(){
+var data = google.visualization.arrayToDataTable([
+['Topic Name', 'Probability'],
+['Topic7', 99],
+['Topic18', 0],
+['Topic14', 0],
+['Topic9', 0],
+['Topic15', 0],
+['TopicOne', 0],
+['TopicZero', 0],
+['Topic11', 0],
+['TopicThree', 0],
+['Topic12', 0],
+['Topic4', 0],
+['TopicTwo', 0],
+['Topic17', 0],
+['Topic6', 0],
+['Topic16', 0],
+['Topic10', 0],
+['Topic5', 0],
+['Topic8', 0],
+['Topic19', 0],
+['Topic13', 1],
+['Other Topics', 0],
+]);
+var options = {
+title: 'Topic repartition',
+titleTextStyle: {color: "white"}, 
+backgroundColor: "transparent", 
+legend: {textStyle: {color: 'white', fontSize: 12}} 
+};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);
+}
+</script>
+<div id="piechart" style="width: 900px; height: 500px;"></div>
+<a href="../topics/topic7.html" style="font-size: 35.070496801132634px">ass</a>
+<a href="../topics/topic7.html" style="font-size: 17.811449830358296px">ball</a>
+<a href="../topics/topic7.html" style="font-size: 16.687394481853538px">beautiful</a>
+<a href="../topics/topic7.html" style="font-size: 20.982396102604145px">bitch</a>
+<a href="../topics/topic7.html" style="font-size: 15.47775552163935px">black</a>
+<a href="../topics/topic7.html" style="font-size: 15.925080847763256px">brother</a>
+<a href="../topics/topic7.html" style="font-size: 17.731076313793526px">buddy</a>
+<a href="../topics/topic7.html" style="font-size: 20.694948846375933px">bye</a>
+<a href="../topics/topic7.html" style="font-size: 30.068249678478015px">car</a>
+<a href="../topics/topic7.html" style="font-size: 24.618473751540076px">charlie</a>
+<a href="../topics/topic7.html" style="font-size: 33.23782055920262px">cool</a>
+<a href="../topics/topic7.html" style="font-size: 26.26753215382664px">crazy</a>
+<a href="../topics/topic7.html" style="font-size: 50.0px">dad</a>
+<a href="../topics/topic7.html" style="font-size: 20.54727015551409px">damn</a>
+<a href="../topics/topic7.html" style="font-size: 28.39517320435142px">date</a>
+<a href="../topics/topic7.html" style="font-size: 18.30614608462166px">dinner</a>
+<a href="../topics/topic7.html" style="font-size: 24.41248666135809px">dog</a>
+<a href="../topics/topic7.html" style="font-size: 15.458346158228217px">dress</a>
+<a href="../topics/topic7.html" style="font-size: 38.810087422707376px">dude</a>
+<a href="../topics/topic7.html" style="font-size: 32.90463053122308px">fun</a>
+<a href="../topics/topic7.html" style="font-size: 23.74736601699344px">funny</a>
+<a href="../topics/topic7.html" style="font-size: 25.428325977357623px">game</a>
+<a href="../topics/topic7.html" style="font-size: 20.64597309240537px">gay</a>
+<a href="../topics/topic7.html" style="font-size: 16.61307793150338px">hair</a>
+<a href="../topics/topic7.html" style="font-size: 41.28289079998026px">hey</a>
+<a href="../topics/topic7.html" style="font-size: 27.41533802329848px">honey</a>
+<a href="../topics/topic7.html" style="font-size: 27.503680564507953px">hot</a>
+<a href="../topics/topic7.html" style="font-size: 27.01596680284692px">huh</a>
+<a href="../topics/topic7.html" style="font-size: 15.891693510677538px">laugh</a>
+<a href="../topics/topic7.html" style="font-size: 22.957051871962673px">marry</a>
+<a href="../topics/topic7.html" style="font-size: 47.27678649435999px">mom</a>
+<a href="../topics/topic7.html" style="font-size: 19.78378829456693px">movie</a>
+<a href="../topics/topic7.html" style="font-size: 28.10629382298076px">ooh</a>
+<a href="../topics/topic7.html" style="font-size: 30.443438597939625px">party</a>
+<a href="../topics/topic7.html" style="font-size: 17.464067121911864px">peter</a>
+<a href="../topics/topic7.html" style="font-size: 18.435662226540774px">phone</a>
+<a href="../topics/topic7.html" style="font-size: 20.70951340763151px">ray</a>
+<a href="../topics/topic7.html" style="font-size: 25.22806869712414px">school</a>
+<a href="../topics/topic7.html" style="font-size: 34.74170330132749px">sex</a>
+<a href="../topics/topic7.html" style="font-size: 25.5934353435231px">shit</a>
+<a href="../topics/topic7.html" style="font-size: 17.050865680650563px">sir</a>
+<a href="../topics/topic7.html" style="font-size: 23.8178393139876px">stupid</a>
+<a href="../topics/topic7.html" style="font-size: 15.9350044937863px">suck</a>
+<a href="../topics/topic7.html" style="font-size: 18.846809320610845px">sweet</a>
+<a href="../topics/topic7.html" style="font-size: 36.86134907872892px">wan</a>
+<a href="../topics/topic7.html" style="font-size: 18.831418121758286px">weird</a>
+<a href="../topics/topic7.html" style="font-size: 25.254473732949563px">whoa</a>
+<a href="../topics/topic7.html" style="font-size: 23.673160062560104px">wife</a>
+<a href="../topics/topic7.html" style="font-size: 19.45151460712214px">win</a>
+<a href="../topics/topic7.html" style="font-size: 17.045786611983203px">write</a>
+<div id="button"><input type="button" onClick="location.href='/index'" value="Change TV Shows selection" ></div></body>
+</html>
+

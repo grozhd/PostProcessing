@@ -1,0 +1,493 @@
+<html>
+<style>
+html {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+	body {
+		position:relative;
+		top:50px;
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		text-align:center;
+		font-size:20px;
+		background:url(../assets/images/dark-canvas.gif);
+		color: #FFFFFF;
+		}
+p { 
+
+	margin-top: 0; 
+
+	text-align: justify;
+
+	}
+
+h3 { 
+
+	font: italic normal 1.4em georgia, sans-serif;
+
+	letter-spacing: 1px; 
+
+	margin-bottom: 0; 
+
+	color: #7D775C;
+
+	}
+
+a:link { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #B7A5DF;
+
+	}
+
+a:visited { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #D4CDDC;
+
+	}
+
+a:hover, a:focus, a:active { 
+
+	text-decoration: underline; 
+
+	color: #9685BA;
+
+	}
+
+abbr {
+
+	border-bottom: none;
+
+	}
+
+
+
+
+
+/* specific divs */
+
+.page-wrapper { 
+
+	background: url(zen-bg.jpg) no-repeat top left; 
+
+	padding: 0 175px 0 110px;  
+
+	margin: 0; 
+
+	position: relative;
+
+	}
+
+
+
+.intro { 
+
+	min-width: 470px;
+
+	width: 100%;
+
+	}
+
+
+
+header h1 { 
+
+	background: transparent url(h1.gif) no-repeat top left;
+
+	margin-top: 10px;
+
+	display: block;
+
+	width: 219px;
+
+	height: 87px;
+
+	float: left;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header h2 { 
+
+	background: transparent url(h2.gif) no-repeat top left; 
+
+	margin-top: 58px; 
+
+	margin-bottom: 40px; 
+
+	width: 200px; 
+
+	height: 18px; 
+
+	float: right;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header {
+
+	padding-top: 20px;
+
+	height: 87px;
+
+}
+
+
+
+.summary {
+
+	clear: both; 
+
+	margin: 20px 20px 20px 10px; 
+
+	width: 160px; 
+
+	float: left;
+
+	}
+
+.summary p {
+
+	font: italic 1.1em/2.2 georgia; 
+
+	text-align: center;
+
+	}
+
+
+
+.preamble {
+
+	clear: right; 
+
+	padding: 0px 10px 0 10px;
+
+	}
+
+.supporting {	
+
+	padding-left: 10px; 
+
+	margin-bottom: 40px;
+
+	}
+
+
+
+footer { 
+
+	text-align: center; 
+
+	}
+
+footer a:link, footer a:visited { 
+
+	margin-right: 20px; 
+
+	}
+
+
+
+.sidebar {
+
+	margin-left: 600px; 
+
+	position: absolute; 
+
+	top: 0; 
+
+	right: 0;
+
+	}
+
+.sidebar .wrapper { 
+
+	font: 10px verdana, sans-serif; 
+
+	background: transparent url(paper-bg.jpg) top left repeat-y; 
+
+	padding: 10px; 
+
+	margin-top: 150px; 
+
+	width: 130px; 
+
+	}
+
+.sidebar h3.select { 
+
+	background: transparent url(h3.gif) no-repeat top left; 
+
+	margin: 10px 0 5px 0; 
+
+	width: 97px; 
+
+	height: 16px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.archives { 
+
+	background: transparent url(h5.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:57px; 
+
+	height: 14px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.resources { 
+
+	background: transparent url(h6.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:63px; 
+
+	height: 10px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+
+
+
+
+.sidebar ul {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+.sidebar li {
+
+	line-height: 1.3em; 
+
+	background: transparent url(cr1.gif) no-repeat top center; 
+
+	display: block; 
+
+	padding-top: 5px; 
+
+	margin-bottom: 5px;
+
+	list-style-type: none;
+
+	}
+
+.sidebar li a:link {
+
+	color: #988F5E;
+
+	}
+
+.sidebar li a:visited {
+
+	color: #B3AE94;
+
+	}
+
+
+
+
+
+.extra1 {
+
+	background: transparent url(cr2.gif) top left no-repeat; 
+
+	position: absolute; 
+
+	top: 40px; 
+
+	right: 0; 
+
+	width: 148px; 
+
+	height: 110px;
+
+	}
+	#button
+	{
+		padding-top:50px;
+	}
+	input
+	{
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		color: #FFFFFF;
+		background-color: transparent;
+		font-size:30px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 10px;
+	}	
+	ol{ 
+		color: #B7A5DF;
+		margin-left: auto;
+		margin-right: auto;
+		
+		text-align:center;
+	}
+	li {
+		list-style-position: inside;
+		left: -10px;
+	}</style>
+<body>
+<h1>Topic11</h1>
+<ol>
+<li>sir: 0.01056845598317936</li>
+<li>ship: 0.008854162075747653</li>
+<li>captain: 0.008398051290000739</li>
+<li>planet: 0.005143301640816791</li>
+<li>earth: 0.0047487137845913996</li>
+<li>system: 0.004467789389895132</li>
+<li>power: 0.004153824809354242</li>
+<li>human: 0.00414459490831534</li>
+<li>doctor: 0.0037623123073563004</li>
+<li>commander: 0.0037443397784267043</li>
+<li>control: 0.0030388745260856607</li>
+<li>space: 0.0029525815128358204</li>
+<li>weapon: 0.002908699686233583</li>
+<li>colonel: 0.002808047362150507</li>
+<li>destroy: 0.0027458197996454775</li>
+<li>computer: 0.002531494400617246</li>
+<li>mission: 0.0025310593585081307</li>
+<li>alien: 0.0024864525079613857</li>
+<li>force: 0.0024749638885306095</li>
+<li>attack: 0.002449257883718411</li>
+<li>report: 0.00244853171125263</li>
+<li>star: 0.0023152631605223933</li>
+<li>return: 0.002241433114352575</li>
+<li>universe: 0.0021539121577831013</li>
+<li>war: 0.0021479452664479445</li>
+<li>lieutenant: 0.0021194991363791666</li>
+<li>major: 0.0020246424582891784</li>
+<li>security: 0.002009665862723143</li>
+<li>command: 0.0019868055974255738</li>
+<li>team: 0.0019587150875343446</li>
+<li>energy: 0.001946605843323124</li>
+<li>begin: 0.0019205480211142312</li>
+<li>crew: 0.0018823416115628937</li>
+<li>field: 0.0018433207285182202</li>
+<li>contact: 0.0017794504795654495</li>
+<li>death: 0.0017473805130472574</li>
+<li>general: 0.001706984554121604</li>
+<li>station: 0.0016896492829143342</li>
+<li>alive: 0.001663792234155469</li>
+<li>create: 0.0015959517052532809</li>
+<li>datum: 0.0015566461521575317</li>
+<li>form: 0.0015546672299585151</li>
+<li>signal: 0.0015536541072983688</li>
+<li>body: 0.001538877891577733</li>
+<li>information: 0.0015186810161848226</li>
+<li>officer: 0.0015078676431121737</li>
+<li>base: 0.0014475439337896519</li>
+<li>program: 0.001423621657720333</li>
+<li>position: 0.0014073471597249806</li>
+<li>technology: 0.00140677062892937</li>
+</ol>
+
+<a href="?" style="font-size: 11.76355615199986px">alien</a>
+<a href="?" style="font-size: 7.871500987483615px">alive</a>
+<a href="?" style="font-size: 11.587586150789782px">attack</a>
+<a href="?" style="font-size: 6.848417290536797px">base</a>
+<a href="?" style="font-size: 9.086228036389397px">begin</a>
+<a href="?" style="font-size: 7.280523730367966px">body</a>
+<a href="?" style="font-size: 39.73168504163232px">captain</a>
+<a href="?" style="font-size: 13.285040722219806px">colonel</a>
+<a href="?" style="font-size: 9.399696609361632px">command</a>
+<a href="?" style="font-size: 17.714696377532135px">commander</a>
+<a href="?" style="font-size: 11.976652051379808px">computer</a>
+<a href="?" style="font-size: 8.418687092975565px">contact</a>
+<a href="?" style="font-size: 14.377097898322614px">control</a>
+<a href="?" style="font-size: 7.550543370731639px">create</a>
+<a href="?" style="font-size: 8.905471218117425px">crew</a>
+<a href="?" style="font-size: 7.364586438336275px">datum</a>
+<a href="?" style="font-size: 8.2669621552494px">death</a>
+<a href="?" style="font-size: 12.990638386608671px">destroy</a>
+<a href="?" style="font-size: 17.799725491331735px">doctor</a>
+<a href="?" style="font-size: 22.46645012360084px">earth</a>
+<a href="?" style="font-size: 9.209509158297676px">energy</a>
+<a href="?" style="font-size: 8.72086107683104px">field</a>
+<a href="?" style="font-size: 11.709202803464077px">force</a>
+<a href="?" style="font-size: 7.355224038558266px">form</a>
+<a href="?" style="font-size: 8.07584644738277px">general</a>
+<a href="?" style="font-size: 19.608327436438362px">human</a>
+<a href="?" style="font-size: 7.184971099855734px">information</a>
+<a href="?" style="font-size: 10.027477711751548px">lieutenant</a>
+<a href="?" style="font-size: 9.578705070596772px">major</a>
+<a href="?" style="font-size: 11.974593841032869px">mission</a>
+<a href="?" style="font-size: 7.133812382395685px">officer</a>
+<a href="?" style="font-size: 24.333268970428673px">planet</a>
+<a href="?" style="font-size: 6.658243938210553px">position</a>
+<a href="?" style="font-size: 19.651994652603108px">power</a>
+<a href="?" style="font-size: 6.735239565676168px">program</a>
+<a href="?" style="font-size: 11.584150585240108px">report</a>
+<a href="?" style="font-size: 10.604354684922829px">return</a>
+<a href="?" style="font-size: 9.507849897476534px">security</a>
+<a href="?" style="font-size: 41.889572563105915px">ship</a>
+<a href="?" style="font-size: 7.350430894404764px">signal</a>
+<a href="?" style="font-size: 50.0px">sir</a>
+<a href="?" style="font-size: 13.968840469861998px">space</a>
+<a href="?" style="font-size: 10.953649067599567px">star</a>
+<a href="?" style="font-size: 7.993832238141323px">station</a>
+<a href="?" style="font-size: 21.13737993991751px">system</a>
+<a href="?" style="font-size: 9.266798719944589px">team</a>
+<a href="?" style="font-size: 6.655516336389964px">technology</a>
+<a href="?" style="font-size: 10.190287782866505px">universe</a>
+<a href="?" style="font-size: 10.162058061587194px">war</a>
+<a href="?" style="font-size: 13.761232912655538px">weapon</a>
+<div id="button"><input type="button" onClick="location.href='/index'" value="Change TV Shows selection" ></div></body>
+</html>
+

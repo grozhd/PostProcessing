@@ -1,0 +1,566 @@
+<html>
+<style>
+html {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+	body {
+		position:relative;
+		top:50px;
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		text-align:center;
+		font-size:20px;
+		background:url(../assets/images/dark-canvas.gif);
+		color: #FFFFFF;
+		}
+p { 
+
+	margin-top: 0; 
+
+	text-align: justify;
+
+	}
+
+h3 { 
+
+	font: italic normal 1.4em georgia, sans-serif;
+
+	letter-spacing: 1px; 
+
+	margin-bottom: 0; 
+
+	color: #7D775C;
+
+	}
+
+a:link { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #B7A5DF;
+
+	}
+
+a:visited { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #D4CDDC;
+
+	}
+
+a:hover, a:focus, a:active { 
+
+	text-decoration: underline; 
+
+	color: #9685BA;
+
+	}
+
+abbr {
+
+	border-bottom: none;
+
+	}
+
+
+
+
+
+/* specific divs */
+
+.page-wrapper { 
+
+	background: url(zen-bg.jpg) no-repeat top left; 
+
+	padding: 0 175px 0 110px;  
+
+	margin: 0; 
+
+	position: relative;
+
+	}
+
+
+
+.intro { 
+
+	min-width: 470px;
+
+	width: 100%;
+
+	}
+
+
+
+header h1 { 
+
+	background: transparent url(h1.gif) no-repeat top left;
+
+	margin-top: 10px;
+
+	display: block;
+
+	width: 219px;
+
+	height: 87px;
+
+	float: left;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header h2 { 
+
+	background: transparent url(h2.gif) no-repeat top left; 
+
+	margin-top: 58px; 
+
+	margin-bottom: 40px; 
+
+	width: 200px; 
+
+	height: 18px; 
+
+	float: right;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header {
+
+	padding-top: 20px;
+
+	height: 87px;
+
+}
+
+
+
+.summary {
+
+	clear: both; 
+
+	margin: 20px 20px 20px 10px; 
+
+	width: 160px; 
+
+	float: left;
+
+	}
+
+.summary p {
+
+	font: italic 1.1em/2.2 georgia; 
+
+	text-align: center;
+
+	}
+
+
+
+.preamble {
+
+	clear: right; 
+
+	padding: 0px 10px 0 10px;
+
+	}
+
+.supporting {	
+
+	padding-left: 10px; 
+
+	margin-bottom: 40px;
+
+	}
+
+
+
+footer { 
+
+	text-align: center; 
+
+	}
+
+footer a:link, footer a:visited { 
+
+	margin-right: 20px; 
+
+	}
+
+
+
+.sidebar {
+
+	margin-left: 600px; 
+
+	position: absolute; 
+
+	top: 0; 
+
+	right: 0;
+
+	}
+
+.sidebar .wrapper { 
+
+	font: 10px verdana, sans-serif; 
+
+	background: transparent url(paper-bg.jpg) top left repeat-y; 
+
+	padding: 10px; 
+
+	margin-top: 150px; 
+
+	width: 130px; 
+
+	}
+
+.sidebar h3.select { 
+
+	background: transparent url(h3.gif) no-repeat top left; 
+
+	margin: 10px 0 5px 0; 
+
+	width: 97px; 
+
+	height: 16px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.archives { 
+
+	background: transparent url(h5.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:57px; 
+
+	height: 14px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.resources { 
+
+	background: transparent url(h6.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:63px; 
+
+	height: 10px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+
+
+
+
+.sidebar ul {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+.sidebar li {
+
+	line-height: 1.3em; 
+
+	background: transparent url(cr1.gif) no-repeat top center; 
+
+	display: block; 
+
+	padding-top: 5px; 
+
+	margin-bottom: 5px;
+
+	list-style-type: none;
+
+	}
+
+.sidebar li a:link {
+
+	color: #988F5E;
+
+	}
+
+.sidebar li a:visited {
+
+	color: #B3AE94;
+
+	}
+
+
+
+
+
+.extra1 {
+
+	background: transparent url(cr2.gif) top left no-repeat; 
+
+	position: absolute; 
+
+	top: 40px; 
+
+	right: 0; 
+
+	width: 148px; 
+
+	height: 110px;
+
+	}
+	
+	h1 + ol{ 
+		color: #B7A5DF;
+		float: left;
+		margin-left: 18%;
+	}
+	h1 + ol + ol { 
+		float: right;
+		color: #0685BA;
+		margin-right: 18%;
+	
+	}
+	#piechart {
+	    clear: both;
+		text-align:center;
+		margin-left: 18%;
+	
+	}
+	#button
+	{
+		padding-top:50px;
+	}
+	
+	input
+	{
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		color: #FFFFFF;
+		background-color: transparent;
+		font-size:30px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 10px;
+	}</style>
+<body>
+<h1>Show 83: Battlestar Galactica</h1>
+<p> Rating: 5.0</p>
+<p> Genre: Drama, Action, Adventure</p>
+<p> Plot: Television series about a cadre of attractive lifeguards who patrol a crowded recreational beach.</p>
+<p> Poster: <img src="http://ia.media-imdb.com/images/M/MV5BMTU3MjE5ODM0NV5BMl5BanBnXkFtZTcwODU2NzI0MQ@@._V1_SX300.jpg"> </p>
+<ol>
+<li>sir: 0.00930293049338762</li>
+<li>ship: 0.007793915639045829</li>
+<li>captain: 0.007392422086549481</li>
+<li>planet: 0.004527414198176073</li>
+<li>earth: 0.004180076478660366</li>
+<li>system: 0.003932791527867567</li>
+<li>power: 0.003656422806191838</li>
+<li>human: 0.0036482981446554308</li>
+<li>doctor: 0.0033117921809447783</li>
+<li>commander: 0.003295971782232938</li>
+<li>control: 0.00267498284889449</li>
+<li>space: 0.0025990230392869246</li>
+<li>weapon: 0.0025603958657950507</li>
+<li>colonel: 0.0024717962088126985</li>
+<li>destroy: 0.002417020119507071</li>
+<li>computer: 0.0022283592315494923</li>
+<li>mission: 0.002227976283793525</li>
+<li>alien: 0.0021887109047423405</li>
+<li>force: 0.0021785979962721156</li>
+<li>attack: 0.0021559701709387667</li>
+<li>report: 0.002155330954388485</li>
+<li>star: 0.002038020718496778</li>
+<li>return: 0.001973031491221329</li>
+<li>universe: 0.0018959907790324828</li>
+<li>war: 0.0018907383963343</li>
+<li>lieutenant: 0.001865698563528364</li>
+<li>major: 0.0017822005497684264</li>
+<li>security: 0.001769017334755736</li>
+<li>command: 0.001748894484316451</li>
+<li>team: 0.0017241676877571576</li>
+<li>energy: 0.0017135084715572003</li>
+<li>begin: 0.0016905709573920087</li>
+<li>crew: 0.0016569395950602078</li>
+<li>field: 0.0016225912888049737</li>
+<li>contact: 0.0015663692174306234</li>
+<li>death: 0.0015381394864350218</li>
+<li>general: 0.0015025807635054647</li>
+<li>station: 0.0014873213137445982</li>
+<li>alive: 0.0014645605313038416</li>
+<li>create: 0.0014048436033045023</li>
+<li>datum: 0.0013702447149677491</li>
+<li>form: 0.0013685027598800265</li>
+<li>signal: 0.0013676109541419302</li>
+<li>body: 0.001354604124381447</li>
+<li>information: 0.001336825734779134</li>
+<li>officer: 0.0013273072149259002</li>
+<li>base: 0.001274207000871556</li>
+<li>program: 0.0012531493107159923</li>
+<li>position: 0.0012388236113038448</li>
+<li>technology: 0.0012383161175008332</li>
+</ol>
+<ol>
+<li>Topic11: 0.8802544580016289</li>
+<li>TopicThree: 0.11974081289598708</li>
+<li>Topic18: 7.205093552503296E-7</li>
+<li>Topic7: 5.871247119759912E-7</li>
+<li>Topic14: 5.5994574487807E-7</li>
+<li>Topic9: 2.9986053498415616E-7</li>
+<li>Topic15: 2.85086192209037E-7</li>
+<li>TopicOne: 2.6287087105329606E-7</li>
+<li>TopicZero: 2.6057850076119593E-7</li>
+<li>Topic12: 2.1054620737547557E-7</li>
+<li>Topic4: 1.7720823149350673E-7</li>
+<li>TopicTwo: 1.6920244816037824E-7</li>
+<li>Topic17: 1.689691406948521E-7</li>
+<li>Topic6: 1.6488386292857732E-7</li>
+<li>Topic16: 1.6172837490110037E-7</li>
+<li>Topic10: 1.6122753633445954E-7</li>
+<li>Topic5: 1.6044252763714587E-7</li>
+<li>Topic8: 1.4548668873275104E-7</li>
+<li>Topic19: 1.3127856242740813E-7</li>
+<li>Topic13: 1.0215289223480518E-7</li>
+</ol>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart(){
+var data = google.visualization.arrayToDataTable([
+['Topic Name', 'Probability'],
+['Topic11', 88],
+['TopicThree', 11],
+['Topic18', 0],
+['Topic7', 0],
+['Topic14', 0],
+['Topic9', 0],
+['Topic15', 0],
+['TopicOne', 0],
+['TopicZero', 0],
+['Topic12', 0],
+['Topic4', 0],
+['TopicTwo', 0],
+['Topic17', 0],
+['Topic6', 0],
+['Topic16', 0],
+['Topic10', 0],
+['Topic5', 0],
+['Topic8', 0],
+['Topic19', 0],
+['Topic13', 1],
+['Other Topics', 0],
+]);
+var options = {
+title: 'Topic repartition',
+titleTextStyle: {color: "white"}, 
+backgroundColor: "transparent", 
+legend: {textStyle: {color: 'white', fontSize: 12}} 
+};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);
+}
+</script>
+<div id="piechart" style="width: 900px; height: 500px;"></div>
+<a href="../topics/topic11.html" style="font-size: 11.76355615199986px">alien</a>
+<a href="../topics/topic11.html" style="font-size: 7.871500987483615px">alive</a>
+<a href="../topics/topic11.html" style="font-size: 11.587586150789782px">attack</a>
+<a href="../topics/topic11.html" style="font-size: 6.848417290536797px">base</a>
+<a href="../topics/topic11.html" style="font-size: 9.086228036389397px">begin</a>
+<a href="../topics/topic11.html" style="font-size: 7.2805237303679675px">body</a>
+<a href="../topics/topic11.html" style="font-size: 39.73168504163232px">captain</a>
+<a href="../topics/topic11.html" style="font-size: 13.285040722219806px">colonel</a>
+<a href="../topics/topic11.html" style="font-size: 9.399696609361632px">command</a>
+<a href="../topics/topic11.html" style="font-size: 17.714696377532135px">commander</a>
+<a href="../topics/topic11.html" style="font-size: 11.976652051379808px">computer</a>
+<a href="../topics/topic11.html" style="font-size: 8.418687092975565px">contact</a>
+<a href="../topics/topic11.html" style="font-size: 14.377097898322614px">control</a>
+<a href="../topics/topic11.html" style="font-size: 7.550543370731639px">create</a>
+<a href="../topics/topic11.html" style="font-size: 8.905471218117425px">crew</a>
+<a href="../topics/topic11.html" style="font-size: 7.364586438336275px">datum</a>
+<a href="../topics/topic11.html" style="font-size: 8.2669621552494px">death</a>
+<a href="../topics/topic11.html" style="font-size: 12.990638386608671px">destroy</a>
+<a href="../topics/topic11.html" style="font-size: 17.799725491331735px">doctor</a>
+<a href="../topics/topic11.html" style="font-size: 22.46645012360084px">earth</a>
+<a href="../topics/topic11.html" style="font-size: 9.209509158297676px">energy</a>
+<a href="../topics/topic11.html" style="font-size: 8.72086107683104px">field</a>
+<a href="../topics/topic11.html" style="font-size: 11.709202803464077px">force</a>
+<a href="../topics/topic11.html" style="font-size: 7.355224038558266px">form</a>
+<a href="../topics/topic11.html" style="font-size: 8.07584644738277px">general</a>
+<a href="../topics/topic11.html" style="font-size: 19.608327436438362px">human</a>
+<a href="../topics/topic11.html" style="font-size: 7.184971099855734px">information</a>
+<a href="../topics/topic11.html" style="font-size: 10.02747771175155px">lieutenant</a>
+<a href="../topics/topic11.html" style="font-size: 9.578705070596772px">major</a>
+<a href="../topics/topic11.html" style="font-size: 11.974593841032869px">mission</a>
+<a href="../topics/topic11.html" style="font-size: 7.1338123823956865px">officer</a>
+<a href="../topics/topic11.html" style="font-size: 24.33326897042867px">planet</a>
+<a href="../topics/topic11.html" style="font-size: 6.658243938210553px">position</a>
+<a href="../topics/topic11.html" style="font-size: 19.651994652603108px">power</a>
+<a href="../topics/topic11.html" style="font-size: 6.735239565676168px">program</a>
+<a href="../topics/topic11.html" style="font-size: 11.584150585240108px">report</a>
+<a href="../topics/topic11.html" style="font-size: 10.604354684922829px">return</a>
+<a href="../topics/topic11.html" style="font-size: 9.507849897476534px">security</a>
+<a href="../topics/topic11.html" style="font-size: 41.889572563105915px">ship</a>
+<a href="../topics/topic11.html" style="font-size: 7.350430894404764px">signal</a>
+<a href="../topics/topic11.html" style="font-size: 50.0px">sir</a>
+<a href="../topics/topic11.html" style="font-size: 13.968840469861998px">space</a>
+<a href="../topics/topic11.html" style="font-size: 10.953649067599569px">star</a>
+<a href="../topics/topic11.html" style="font-size: 7.993832238141323px">station</a>
+<a href="../topics/topic11.html" style="font-size: 21.13737993991751px">system</a>
+<a href="../topics/topic11.html" style="font-size: 9.266798719944589px">team</a>
+<a href="../topics/topic11.html" style="font-size: 6.655516336389964px">technology</a>
+<a href="../topics/topic11.html" style="font-size: 10.190287782866505px">universe</a>
+<a href="../topics/topic11.html" style="font-size: 10.162058061587194px">war</a>
+<a href="../topics/topic11.html" style="font-size: 13.761232912655538px">weapon</a>
+<div id="button"><input type="button" onClick="location.href='/index'" value="Change TV Shows selection" ></div></body>
+</html>
+

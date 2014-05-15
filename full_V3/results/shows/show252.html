@@ -1,0 +1,566 @@
+<html>
+<style>
+html {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+	body {
+		position:relative;
+		top:50px;
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		text-align:center;
+		font-size:20px;
+		background:url(../assets/images/dark-canvas.gif);
+		color: #FFFFFF;
+		}
+p { 
+
+	margin-top: 0; 
+
+	text-align: justify;
+
+	}
+
+h3 { 
+
+	font: italic normal 1.4em georgia, sans-serif;
+
+	letter-spacing: 1px; 
+
+	margin-bottom: 0; 
+
+	color: #7D775C;
+
+	}
+
+a:link { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #B7A5DF;
+
+	}
+
+a:visited { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #D4CDDC;
+
+	}
+
+a:hover, a:focus, a:active { 
+
+	text-decoration: underline; 
+
+	color: #9685BA;
+
+	}
+
+abbr {
+
+	border-bottom: none;
+
+	}
+
+
+
+
+
+/* specific divs */
+
+.page-wrapper { 
+
+	background: url(zen-bg.jpg) no-repeat top left; 
+
+	padding: 0 175px 0 110px;  
+
+	margin: 0; 
+
+	position: relative;
+
+	}
+
+
+
+.intro { 
+
+	min-width: 470px;
+
+	width: 100%;
+
+	}
+
+
+
+header h1 { 
+
+	background: transparent url(h1.gif) no-repeat top left;
+
+	margin-top: 10px;
+
+	display: block;
+
+	width: 219px;
+
+	height: 87px;
+
+	float: left;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header h2 { 
+
+	background: transparent url(h2.gif) no-repeat top left; 
+
+	margin-top: 58px; 
+
+	margin-bottom: 40px; 
+
+	width: 200px; 
+
+	height: 18px; 
+
+	float: right;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header {
+
+	padding-top: 20px;
+
+	height: 87px;
+
+}
+
+
+
+.summary {
+
+	clear: both; 
+
+	margin: 20px 20px 20px 10px; 
+
+	width: 160px; 
+
+	float: left;
+
+	}
+
+.summary p {
+
+	font: italic 1.1em/2.2 georgia; 
+
+	text-align: center;
+
+	}
+
+
+
+.preamble {
+
+	clear: right; 
+
+	padding: 0px 10px 0 10px;
+
+	}
+
+.supporting {	
+
+	padding-left: 10px; 
+
+	margin-bottom: 40px;
+
+	}
+
+
+
+footer { 
+
+	text-align: center; 
+
+	}
+
+footer a:link, footer a:visited { 
+
+	margin-right: 20px; 
+
+	}
+
+
+
+.sidebar {
+
+	margin-left: 600px; 
+
+	position: absolute; 
+
+	top: 0; 
+
+	right: 0;
+
+	}
+
+.sidebar .wrapper { 
+
+	font: 10px verdana, sans-serif; 
+
+	background: transparent url(paper-bg.jpg) top left repeat-y; 
+
+	padding: 10px; 
+
+	margin-top: 150px; 
+
+	width: 130px; 
+
+	}
+
+.sidebar h3.select { 
+
+	background: transparent url(h3.gif) no-repeat top left; 
+
+	margin: 10px 0 5px 0; 
+
+	width: 97px; 
+
+	height: 16px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.archives { 
+
+	background: transparent url(h5.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:57px; 
+
+	height: 14px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.resources { 
+
+	background: transparent url(h6.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:63px; 
+
+	height: 10px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+
+
+
+
+.sidebar ul {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+.sidebar li {
+
+	line-height: 1.3em; 
+
+	background: transparent url(cr1.gif) no-repeat top center; 
+
+	display: block; 
+
+	padding-top: 5px; 
+
+	margin-bottom: 5px;
+
+	list-style-type: none;
+
+	}
+
+.sidebar li a:link {
+
+	color: #988F5E;
+
+	}
+
+.sidebar li a:visited {
+
+	color: #B3AE94;
+
+	}
+
+
+
+
+
+.extra1 {
+
+	background: transparent url(cr2.gif) top left no-repeat; 
+
+	position: absolute; 
+
+	top: 40px; 
+
+	right: 0; 
+
+	width: 148px; 
+
+	height: 110px;
+
+	}
+	
+	h1 + ol{ 
+		color: #B7A5DF;
+		float: left;
+		margin-left: 18%;
+	}
+	h1 + ol + ol { 
+		float: right;
+		color: #0685BA;
+		margin-right: 18%;
+	
+	}
+	#piechart {
+	    clear: both;
+		text-align:center;
+		margin-left: 18%;
+	
+	}
+	#button
+	{
+		padding-top:50px;
+	}
+	
+	input
+	{
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		color: #FFFFFF;
+		background-color: transparent;
+		font-size:30px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 10px;
+	}</style>
+<body>
+<h1>Show 252: Doctor Who 1963</h1>
+<p> Rating: 7.9</p>
+<p> Genre: Documentary</p>
+<p> Plot: N/A</p>
+<p> Poster: <img src="N/A"> </p>
+<ol>
+<li>fuck: 0.0089214881674091</li>
+<li>shit: 0.0034167745832811664</li>
+<li>fucking: 0.003270455203249352</li>
+<li>sir: 0.0028612836773903513</li>
+<li>car: 0.0024487072690207875</li>
+<li>agent: 0.0020588063657842434</li>
+<li>body: 0.0018361313374909748</li>
+<li>victim: 0.0018149239549383174</li>
+<li>sort: 0.0015738769698036964</li>
+<li>dad: 0.0015499383266093121</li>
+<li>mum: 0.001531392889959613</li>
+<li>murder: 0.0015143319610672532</li>
+<li>blood: 0.0014840826120892919</li>
+<li>car: 0.0014378423238095382</li>
+<li>mate: 0.00142306408923271</li>
+<li>king: 0.0014059053270062685</li>
+<li>bloody: 0.001239073507689844</li>
+<li>round: 0.001235185572590285</li>
+<li>lord: 0.0012283082986986056</li>
+<li>jesus: 0.0010888200566743541</li>
+<li>sir: 0.00105536053185457</li>
+<li>phone: 0.001028006233531247</li>
+<li>killer: 0.0010188174514897295</li>
+<li>death: 0.001015965824297619</li>
+<li>evidence: 9.819896377506422E-4</li>
+<li>gun: 9.697162122978636E-4</li>
+<li>dialogue: 9.466783980279944E-4</li>
+<li>war: 9.397927555007586E-4</li>
+<li>doctor: 9.381337735777756E-4</li>
+<li>laugh: 9.132250530525825E-4</li>
+<li>phone: 8.964830235713598E-4</li>
+<li>shoot: 8.682837111595735E-4</li>
+<li>effect: 8.630251882149522E-4</li>
+<li>brother: 8.612822077897778E-4</li>
+<li>bone: 8.583255631260153E-4</li>
+<li>crime: 8.451150403263734E-4</li>
+<li>match: 8.22041003692247E-4</li>
+<li>scene: 8.174778058868192E-4</li>
+<li>style: 8.111017408336648E-4</li>
+<li>laughter: 8.025306305947056E-4</li>
+<li>police: 8.010499405876713E-4</li>
+<li>sir: 7.907163353482406E-4</li>
+<li>layer: 7.523572035432636E-4</li>
+<li>top: 7.464394183465733E-4</li>
+<li>ring: 7.398339102029756E-4</li>
+<li>death: 7.391049933845702E-4</li>
+<li>lovely: 7.311461059010495E-4</li>
+<li>default: 7.268656884010838E-4</li>
+<li>dog: 7.251340748263563E-4</li>
+<li>par: 7.126474809734685E-4</li>
+</ol>
+<ol>
+<li>Topic18: 0.4171061614412363</li>
+<li>TopicOne: 0.324092153436353</li>
+<li>Topic14: 0.2586011128241781</li>
+<li>Topic7: 3.219546139509217E-5</li>
+<li>Topic9: 1.6443096468387798E-5</li>
+<li>Topic15: 1.5632933358656973E-5</li>
+<li>TopicZero: 1.4289034153262619E-5</li>
+<li>Topic11: 1.4181655095957898E-5</li>
+<li>TopicThree: 1.1696000889285695E-5</li>
+<li>Topic12: 1.1545472628170465E-5</li>
+<li>Topic4: 9.717357589567724E-6</li>
+<li>TopicTwo: 9.278353945228203E-6</li>
+<li>Topic17: 9.265560340485773E-6</li>
+<li>Topic6: 9.04154080949092E-6</li>
+<li>Topic16: 8.868507055504628E-6</li>
+<li>Topic10: 8.841043165110384E-6</li>
+<li>Topic5: 8.797996574337329E-6</li>
+<li>Topic8: 7.977880976652475E-6</li>
+<li>Topic19: 7.198766807840178E-6</li>
+<li>Topic13: 5.601636979772866E-6</li>
+</ol>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart(){
+var data = google.visualization.arrayToDataTable([
+['Topic Name', 'Probability'],
+['Topic18', 41],
+['TopicOne', 32],
+['Topic14', 25],
+['Topic7', 0],
+['Topic9', 0],
+['Topic15', 0],
+['TopicZero', 0],
+['Topic11', 0],
+['TopicThree', 0],
+['Topic12', 0],
+['Topic4', 0],
+['TopicTwo', 0],
+['Topic17', 0],
+['Topic6', 0],
+['Topic16', 0],
+['Topic10', 0],
+['Topic5', 0],
+['Topic8', 0],
+['Topic19', 0],
+['Topic13', 1],
+['Other Topics', 1],
+]);
+var options = {
+title: 'Topic repartition',
+titleTextStyle: {color: "white"}, 
+backgroundColor: "transparent", 
+legend: {textStyle: {color: 'white', fontSize: 12}} 
+};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);
+}
+</script>
+<div id="piechart" style="width: 900px; height: 500px;"></div>
+<a href="../topics/topic1.html" style="font-size: 11.538469407521188px">agent</a>
+<a href="../topics/topic1.html" style="font-size: 8.31746107959187px">blood</a>
+<a href="../topics/topic18.html" style="font-size: 6.944320748057915px">bloody</a>
+<a href="../topics/topic1.html" style="font-size: 10.290499202804009px">body</a>
+<a href="../topics/topic1.html" style="font-size: 4.810439396543428px">bone</a>
+<a href="../topics/topic14.html" style="font-size: 4.827009752342158px">brother</a>
+<a href="../topics/topic18.html" style="font-size: 13.723648023017661px">car</a>
+<a href="../topics/topic1.html" style="font-size: 8.058309874030263px">car*</a>
+<a href="../topics/topic1.html" style="font-size: 4.736401732917415px">crime</a>
+<a href="../topics/topic18.html" style="font-size: 8.686545885199731px">dad</a>
+<a href="../topics/topic1.html" style="font-size: 5.693925751137699px">death</a>
+<a href="../topics/topic14.html" style="font-size: 4.1422741336169615px">death*</a>
+<a href="../topics/topic14.html" style="font-size: 4.0736796079401945px">default</a>
+<a href="../topics/topic14.html" style="font-size: 5.305608101831515px">dialogue</a>
+<a href="../topics/topic18.html" style="font-size: 5.257720214239885px">doctor</a>
+<a href="../topics/topic18.html" style="font-size: 4.063974872910375px">dog</a>
+<a href="../topics/topic14.html" style="font-size: 4.8367781922731865px">effect</a>
+<a href="../topics/topic1.html" style="font-size: 5.503508043298918px">evidence</a>
+<a href="../topics/topic18.html" style="font-size: 50.0px">fuck</a>
+<a href="../topics/topic18.html" style="font-size: 18.32909006816028px">fucking</a>
+<a href="../topics/topic1.html" style="font-size: 5.434722291289436px">gun</a>
+<a href="../topics/topic18.html" style="font-size: 6.102233373193833px">jesus</a>
+<a href="../topics/topic1.html" style="font-size: 5.709907542171887px">killer</a>
+<a href="../topics/topic14.html" style="font-size: 7.879320695296954px">king</a>
+<a href="../topics/topic18.html" style="font-size: 5.118120631424842px">laugh</a>
+<a href="../topics/topic18.html" style="font-size: 4.497739701804533px">laughter</a>
+<a href="../topics/topic14.html" style="font-size: 4.216545431801859px">layer</a>
+<a href="../topics/topic14.html" style="font-size: 6.883987713987631px">lord</a>
+<a href="../topics/topic18.html" style="font-size: 4.097668977312462px">lovely</a>
+<a href="../topics/topic1.html" style="font-size: 4.607084537169637px">match</a>
+<a href="../topics/topic18.html" style="font-size: 7.975486054172415px">mate</a>
+<a href="../topics/topic18.html" style="font-size: 8.582608984193422px">mum</a>
+<a href="../topics/topic1.html" style="font-size: 8.486991926970363px">murder</a>
+<a href="../topics/topic14.html" style="font-size: 3.993994430081889px">par</a>
+<a href="../topics/topic18.html" style="font-size: 5.76140557629519px">phone</a>
+<a href="../topics/topic1.html" style="font-size: 5.024290828778336px">phone*</a>
+<a href="../topics/topic18.html" style="font-size: 4.489441254397276px">police</a>
+<a href="../topics/topic18.html" style="font-size: 4.146359308672555px">ring</a>
+<a href="../topics/topic18.html" style="font-size: 6.922531025163018px">round</a>
+<a href="../topics/topic1.html" style="font-size: 4.581510340803511px">scene</a>
+<a href="../topics/topic18.html" style="font-size: 19.149129154051415px">shit</a>
+<a href="../topics/topic1.html" style="font-size: 4.866249300937719px">shoot</a>
+<a href="../topics/topic14.html" style="font-size: 16.035910285925425px">sir</a>
+<a href="../topics/topic18.html" style="font-size: 5.914711268182169px">sir*</a>
+<a href="../topics/topic1.html" style="font-size: 4.431527120311552px">sir**</a>
+<a href="../topics/topic18.html" style="font-size: 8.820708721854237px">sort</a>
+<a href="../topics/topic14.html" style="font-size: 4.545776027572863px">style</a>
+<a href="../topics/topic18.html" style="font-size: 4.183379523347772px">top</a>
+<a href="../topics/topic1.html" style="font-size: 10.171643569333968px">victim</a>
+<a href="../topics/topic14.html" style="font-size: 5.267017889088816px">war</a>
+<div id="button"><input type="button" onClick="location.href='/index'" value="Change TV Shows selection" ></div></body>
+</html>
+

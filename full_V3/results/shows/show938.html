@@ -1,0 +1,566 @@
+<html>
+<style>
+html {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+	body {
+		position:relative;
+		top:50px;
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		text-align:center;
+		font-size:20px;
+		background:url(../assets/images/dark-canvas.gif);
+		color: #FFFFFF;
+		}
+p { 
+
+	margin-top: 0; 
+
+	text-align: justify;
+
+	}
+
+h3 { 
+
+	font: italic normal 1.4em georgia, sans-serif;
+
+	letter-spacing: 1px; 
+
+	margin-bottom: 0; 
+
+	color: #7D775C;
+
+	}
+
+a:link { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #B7A5DF;
+
+	}
+
+a:visited { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #D4CDDC;
+
+	}
+
+a:hover, a:focus, a:active { 
+
+	text-decoration: underline; 
+
+	color: #9685BA;
+
+	}
+
+abbr {
+
+	border-bottom: none;
+
+	}
+
+
+
+
+
+/* specific divs */
+
+.page-wrapper { 
+
+	background: url(zen-bg.jpg) no-repeat top left; 
+
+	padding: 0 175px 0 110px;  
+
+	margin: 0; 
+
+	position: relative;
+
+	}
+
+
+
+.intro { 
+
+	min-width: 470px;
+
+	width: 100%;
+
+	}
+
+
+
+header h1 { 
+
+	background: transparent url(h1.gif) no-repeat top left;
+
+	margin-top: 10px;
+
+	display: block;
+
+	width: 219px;
+
+	height: 87px;
+
+	float: left;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header h2 { 
+
+	background: transparent url(h2.gif) no-repeat top left; 
+
+	margin-top: 58px; 
+
+	margin-bottom: 40px; 
+
+	width: 200px; 
+
+	height: 18px; 
+
+	float: right;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header {
+
+	padding-top: 20px;
+
+	height: 87px;
+
+}
+
+
+
+.summary {
+
+	clear: both; 
+
+	margin: 20px 20px 20px 10px; 
+
+	width: 160px; 
+
+	float: left;
+
+	}
+
+.summary p {
+
+	font: italic 1.1em/2.2 georgia; 
+
+	text-align: center;
+
+	}
+
+
+
+.preamble {
+
+	clear: right; 
+
+	padding: 0px 10px 0 10px;
+
+	}
+
+.supporting {	
+
+	padding-left: 10px; 
+
+	margin-bottom: 40px;
+
+	}
+
+
+
+footer { 
+
+	text-align: center; 
+
+	}
+
+footer a:link, footer a:visited { 
+
+	margin-right: 20px; 
+
+	}
+
+
+
+.sidebar {
+
+	margin-left: 600px; 
+
+	position: absolute; 
+
+	top: 0; 
+
+	right: 0;
+
+	}
+
+.sidebar .wrapper { 
+
+	font: 10px verdana, sans-serif; 
+
+	background: transparent url(paper-bg.jpg) top left repeat-y; 
+
+	padding: 10px; 
+
+	margin-top: 150px; 
+
+	width: 130px; 
+
+	}
+
+.sidebar h3.select { 
+
+	background: transparent url(h3.gif) no-repeat top left; 
+
+	margin: 10px 0 5px 0; 
+
+	width: 97px; 
+
+	height: 16px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.archives { 
+
+	background: transparent url(h5.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:57px; 
+
+	height: 14px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.resources { 
+
+	background: transparent url(h6.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:63px; 
+
+	height: 10px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+
+
+
+
+.sidebar ul {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+.sidebar li {
+
+	line-height: 1.3em; 
+
+	background: transparent url(cr1.gif) no-repeat top center; 
+
+	display: block; 
+
+	padding-top: 5px; 
+
+	margin-bottom: 5px;
+
+	list-style-type: none;
+
+	}
+
+.sidebar li a:link {
+
+	color: #988F5E;
+
+	}
+
+.sidebar li a:visited {
+
+	color: #B3AE94;
+
+	}
+
+
+
+
+
+.extra1 {
+
+	background: transparent url(cr2.gif) top left no-repeat; 
+
+	position: absolute; 
+
+	top: 40px; 
+
+	right: 0; 
+
+	width: 148px; 
+
+	height: 110px;
+
+	}
+	
+	h1 + ol{ 
+		color: #B7A5DF;
+		float: left;
+		margin-left: 18%;
+	}
+	h1 + ol + ol { 
+		float: right;
+		color: #0685BA;
+		margin-right: 18%;
+	
+	}
+	#piechart {
+	    clear: both;
+		text-align:center;
+		margin-left: 18%;
+	
+	}
+	#button
+	{
+		padding-top:50px;
+	}
+	
+	input
+	{
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		color: #FFFFFF;
+		background-color: transparent;
+		font-size:30px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 10px;
+	}</style>
+<body>
+<h1>Show 938: The New Normal</h1>
+<p> Rating: 6.8</p>
+<p> Genre: Comedy</p>
+<p> Plot: A single mother's life as she becomes a surrogate for a gay couple.</p>
+<p> Poster: <img src="http://ia.media-imdb.com/images/M/MV5BMTgwNzY5NzUyNl5BMl5BanBnXkFtZTcwNDEzODEyOA@@._V1_SX300.jpg"> </p>
+<ol>
+<li>mom: 0.002331109651228863</li>
+<li>dad: 0.002239043059799621</li>
+<li>mom: 0.0021170952137965038</li>
+<li>dad: 0.002018360437036306</li>
+<li>wan: 0.001977998916816544</li>
+<li>hey: 0.001848683402683229</li>
+<li>school: 0.0017700255349373149</li>
+<li>dude: 0.0017379491378805903</li>
+<li>wan: 0.0016506829565915832</li>
+<li>ass: 0.0015704870493260168</li>
+<li>sex: 0.0015557633932490982</li>
+<li>cool: 0.0014884182289189559</li>
+<li>dad: 0.001487062613568349</li>
+<li>fun: 0.0014734976925241151</li>
+<li>date: 0.001465029659937636</li>
+<li>mom: 0.0014545079415165217</li>
+<li>sex: 0.0014219940036117322</li>
+<li>honey: 0.0013762476411991968</li>
+<li>party: 0.0013632833981830526</li>
+<li>car: 0.001346482115258368</li>
+<li>school: 0.0013095902735266699</li>
+<li>marry: 0.0013004342488146413</li>
+<li>date: 0.0012715603099002243</li>
+<li>ooh: 0.0012586240424206808</li>
+<li>hot: 0.0012316385017381453</li>
+<li>honey: 0.0012276824466625426</li>
+<li>huh: 0.0012097982594738272</li>
+<li>crazy: 0.0011762827113417787</li>
+<li>fun: 0.001156946949429541</li>
+<li>shit: 0.0011460960756469146</li>
+<li>game: 0.0011387023360385</li>
+<li>whoa: 0.001130917082813051</li>
+<li>school: 0.0011297346425688775</li>
+<li>party: 0.001123469302403041</li>
+<li>charlie: 0.0011024364559248992</li>
+<li>dog: 0.0010932121766312932</li>
+<li>stupid: 0.0010665833563081302</li>
+<li>funny: 0.0010634275013774105</li>
+<li>wife: 0.0010601044948320153</li>
+<li>bye: 0.0010525265457586727</li>
+<li>marry: 0.0010280365533475585</li>
+<li>bitch: 9.396097674300486E-4</li>
+<li>game: 9.285267489757492E-4</li>
+<li>ray: 9.273898453436906E-4</li>
+<li>bye: 9.267376317477242E-4</li>
+<li>gay: 9.245444553071994E-4</li>
+<li>hey: 9.220950566671055E-4</li>
+<li>jack: 9.203133440828146E-4</li>
+<li>damn: 9.201244527906343E-4</li>
+<li>movie: 8.859350775499013E-4</li>
+</ol>
+<ol>
+<li>Topic7: 0.45736178488107443</li>
+<li>Topic15: 0.2977243760418229</li>
+<li>Topic9: 0.2448548197525742</li>
+<li>Topic18: 1.0554624474030664E-5</li>
+<li>Topic14: 8.20255423474196E-6</li>
+<li>TopicOne: 3.85075267786536E-6</li>
+<li>TopicZero: 3.817172117928866E-6</li>
+<li>Topic11: 3.7884868800606735E-6</li>
+<li>TopicThree: 3.1244692963140984E-6</li>
+<li>Topic12: 3.084257181546483E-6</li>
+<li>Topic4: 2.595894589724453E-6</li>
+<li>TopicTwo: 2.478619170485613E-6</li>
+<li>Topic17: 2.475201487331748E-6</li>
+<li>Topic6: 2.415356917124055E-6</li>
+<li>Topic16: 2.3691326857244658E-6</li>
+<li>Topic10: 2.3617959829397767E-6</li>
+<li>Topic5: 2.3502965180838347E-6</li>
+<li>Topic8: 2.13121086405127E-6</li>
+<li>Topic19: 1.923078330391214E-6</li>
+<li>Topic13: 1.49642112018229E-6</li>
+</ol>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart(){
+var data = google.visualization.arrayToDataTable([
+['Topic Name', 'Probability'],
+['Topic7', 45],
+['Topic15', 29],
+['Topic9', 24],
+['Topic18', 0],
+['Topic14', 0],
+['TopicOne', 0],
+['TopicZero', 0],
+['Topic11', 0],
+['TopicThree', 0],
+['Topic12', 0],
+['Topic4', 0],
+['TopicTwo', 0],
+['Topic17', 0],
+['Topic6', 0],
+['Topic16', 0],
+['Topic10', 0],
+['Topic5', 0],
+['Topic8', 0],
+['Topic19', 0],
+['Topic13', 1],
+['Other Topics', 1],
+]);
+var options = {
+title: 'Topic repartition',
+titleTextStyle: {color: "white"}, 
+backgroundColor: "transparent", 
+legend: {textStyle: {color: 'white', fontSize: 12}} 
+};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);
+}
+</script>
+<div id="piechart" style="width: 900px; height: 500px;"></div>
+<a href="../topics/topic7.html" style="font-size: 33.685396319690966px">ass</a>
+<a href="../topics/topic7.html" style="font-size: 20.153701627350003px">bitch</a>
+<a href="../topics/topic15.html" style="font-size: 22.57565501485151px">bye</a>
+<a href="../topics/topic7.html" style="font-size: 19.877607028463615px">bye*</a>
+<a href="../topics/topic7.html" style="font-size: 28.88071169343234px">car</a>
+<a href="../topics/topic7.html" style="font-size: 23.6461733008514px">charlie</a>
+<a href="../topics/topic7.html" style="font-size: 31.925101166612315px">cool</a>
+<a href="../topics/topic7.html" style="font-size: 25.23010255484318px">crazy</a>
+<a href="../topics/topic7.html" style="font-size: 48.025262531500644px">dad</a>
+<a href="../topics/topic15.html" style="font-size: 43.29183820186904px">dad*</a>
+<a href="../topics/topic9.html" style="font-size: 31.896024556039915px">dad**</a>
+<a href="../topics/topic7.html" style="font-size: 19.73576087048465px">damn</a>
+<a href="../topics/topic15.html" style="font-size: 31.423439458657253px">date</a>
+<a href="../topics/topic7.html" style="font-size: 27.27371295532819px">date*</a>
+<a href="../topics/topic7.html" style="font-size: 23.448321619169604px">dog</a>
+<a href="../topics/topic7.html" style="font-size: 37.27729274692026px">dude</a>
+<a href="../topics/topic7.html" style="font-size: 31.6050703952804px">fun</a>
+<a href="../topics/topic15.html" style="font-size: 24.815369556289365px">fun*</a>
+<a href="../topics/topic7.html" style="font-size: 22.80946974795493px">funny</a>
+<a href="../topics/topic7.html" style="font-size: 24.424040615983554px">game</a>
+<a href="../topics/topic15.html" style="font-size: 19.915981826214587px">game*</a>
+<a href="../topics/topic7.html" style="font-size: 19.830565559621324px">gay</a>
+<a href="../topics/topic7.html" style="font-size: 39.652433374566506px">hey</a>
+<a href="../topics/topic15.html" style="font-size: 19.778028377622984px">hey*</a>
+<a href="../topics/topic15.html" style="font-size: 29.51915283079234px">honey</a>
+<a href="../topics/topic7.html" style="font-size: 26.33257611917483px">honey*</a>
+<a href="../topics/topic7.html" style="font-size: 26.417429593860533px">hot</a>
+<a href="../topics/topic7.html" style="font-size: 25.948977964980593px">huh</a>
+<a href="../topics/topic15.html" style="font-size: 19.73981240216787px">jack</a>
+<a href="../topics/topic15.html" style="font-size: 27.893030431432237px">marry</a>
+<a href="../topics/topic7.html" style="font-size: 22.050368862005715px">marry*</a>
+<a href="../topics/topic15.html" style="font-size: 50.0px">mom</a>
+<a href="../topics/topic7.html" style="font-size: 45.40960166074685px">mom*</a>
+<a href="../topics/topic9.html" style="font-size: 31.1977589889383px">mom**</a>
+<a href="../topics/topic7.html" style="font-size: 19.002432534284125px">movie</a>
+<a href="../topics/topic7.html" style="font-size: 26.996242792722924px">ooh</a>
+<a href="../topics/topic7.html" style="font-size: 29.24108262055341px">party</a>
+<a href="../topics/topic15.html" style="font-size: 24.097307087437848px">party*</a>
+<a href="../topics/topic7.html" style="font-size: 19.891596366022714px">ray</a>
+<a href="../topics/topic15.html" style="font-size: 37.96529978768334px">school</a>
+<a href="../topics/topic9.html" style="font-size: 28.089418119742003px">school*</a>
+<a href="../topics/topic7.html" style="font-size: 24.231692446842406px">school**</a>
+<a href="../topics/topic7.html" style="font-size: 33.36958843675511px">sex</a>
+<a href="../topics/topic15.html" style="font-size: 30.500367129064838px">sex*</a>
+<a href="../topics/topic7.html" style="font-size: 24.582629029113686px">shit</a>
+<a href="../topics/topic7.html" style="font-size: 22.877159719747038px">stupid</a>
+<a href="../topics/topic15.html" style="font-size: 42.426123450988804px">wan</a>
+<a href="../topics/topic7.html" style="font-size: 35.40551933542492px">wan*</a>
+<a href="../topics/topic7.html" style="font-size: 24.257054622395803px">whoa</a>
+<a href="../topics/topic7.html" style="font-size: 22.738194539093705px">wife</a>
+<div id="button"><input type="button" onClick="location.href='/index'" value="Change TV Shows selection" ></div></body>
+</html>
+

@@ -1,0 +1,493 @@
+<html>
+<style>
+html {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+	body {
+		position:relative;
+		top:50px;
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		text-align:center;
+		font-size:20px;
+		background:url(../assets/images/dark-canvas.gif);
+		color: #FFFFFF;
+		}
+p { 
+
+	margin-top: 0; 
+
+	text-align: justify;
+
+	}
+
+h3 { 
+
+	font: italic normal 1.4em georgia, sans-serif;
+
+	letter-spacing: 1px; 
+
+	margin-bottom: 0; 
+
+	color: #7D775C;
+
+	}
+
+a:link { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #B7A5DF;
+
+	}
+
+a:visited { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #D4CDDC;
+
+	}
+
+a:hover, a:focus, a:active { 
+
+	text-decoration: underline; 
+
+	color: #9685BA;
+
+	}
+
+abbr {
+
+	border-bottom: none;
+
+	}
+
+
+
+
+
+/* specific divs */
+
+.page-wrapper { 
+
+	background: url(zen-bg.jpg) no-repeat top left; 
+
+	padding: 0 175px 0 110px;  
+
+	margin: 0; 
+
+	position: relative;
+
+	}
+
+
+
+.intro { 
+
+	min-width: 470px;
+
+	width: 100%;
+
+	}
+
+
+
+header h1 { 
+
+	background: transparent url(h1.gif) no-repeat top left;
+
+	margin-top: 10px;
+
+	display: block;
+
+	width: 219px;
+
+	height: 87px;
+
+	float: left;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header h2 { 
+
+	background: transparent url(h2.gif) no-repeat top left; 
+
+	margin-top: 58px; 
+
+	margin-bottom: 40px; 
+
+	width: 200px; 
+
+	height: 18px; 
+
+	float: right;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header {
+
+	padding-top: 20px;
+
+	height: 87px;
+
+}
+
+
+
+.summary {
+
+	clear: both; 
+
+	margin: 20px 20px 20px 10px; 
+
+	width: 160px; 
+
+	float: left;
+
+	}
+
+.summary p {
+
+	font: italic 1.1em/2.2 georgia; 
+
+	text-align: center;
+
+	}
+
+
+
+.preamble {
+
+	clear: right; 
+
+	padding: 0px 10px 0 10px;
+
+	}
+
+.supporting {	
+
+	padding-left: 10px; 
+
+	margin-bottom: 40px;
+
+	}
+
+
+
+footer { 
+
+	text-align: center; 
+
+	}
+
+footer a:link, footer a:visited { 
+
+	margin-right: 20px; 
+
+	}
+
+
+
+.sidebar {
+
+	margin-left: 600px; 
+
+	position: absolute; 
+
+	top: 0; 
+
+	right: 0;
+
+	}
+
+.sidebar .wrapper { 
+
+	font: 10px verdana, sans-serif; 
+
+	background: transparent url(paper-bg.jpg) top left repeat-y; 
+
+	padding: 10px; 
+
+	margin-top: 150px; 
+
+	width: 130px; 
+
+	}
+
+.sidebar h3.select { 
+
+	background: transparent url(h3.gif) no-repeat top left; 
+
+	margin: 10px 0 5px 0; 
+
+	width: 97px; 
+
+	height: 16px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.archives { 
+
+	background: transparent url(h5.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:57px; 
+
+	height: 14px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.resources { 
+
+	background: transparent url(h6.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:63px; 
+
+	height: 10px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+
+
+
+
+.sidebar ul {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+.sidebar li {
+
+	line-height: 1.3em; 
+
+	background: transparent url(cr1.gif) no-repeat top center; 
+
+	display: block; 
+
+	padding-top: 5px; 
+
+	margin-bottom: 5px;
+
+	list-style-type: none;
+
+	}
+
+.sidebar li a:link {
+
+	color: #988F5E;
+
+	}
+
+.sidebar li a:visited {
+
+	color: #B3AE94;
+
+	}
+
+
+
+
+
+.extra1 {
+
+	background: transparent url(cr2.gif) top left no-repeat; 
+
+	position: absolute; 
+
+	top: 40px; 
+
+	right: 0; 
+
+	width: 148px; 
+
+	height: 110px;
+
+	}
+	#button
+	{
+		padding-top:50px;
+	}
+	input
+	{
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		color: #FFFFFF;
+		background-color: transparent;
+		font-size:30px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 10px;
+	}	
+	ol{ 
+		color: #B7A5DF;
+		margin-left: auto;
+		margin-right: auto;
+		
+		text-align:center;
+	}
+	li {
+		list-style-position: inside;
+		left: -10px;
+	}</style>
+<body>
+<h1>Topic13</h1>
+<ol>
+<li>chuck: 0.00802956574142461</li>
+<li>shawn: 0.0068064751136277905</li>
+<li>monk: 0.006371683391795603</li>
+<li>power: 0.006294974101152805</li>
+<li>phoebe: 0.0054471265203336165</li>
+<li>leo: 0.005187835630721086</li>
+<li>piper: 0.005149461696929358</li>
+<li>demon: 0.004597427697553494</li>
+<li>sarah: 0.004466843553097977</li>
+<li>sister: 0.004057954757510187</li>
+<li>dad: 0.0034657986466872263</li>
+<li>figure: 0.003457064093323987</li>
+<li>hey: 0.003456276100468969</li>
+<li>wan: 0.00323511258576538</li>
+<li>witch: 0.002955767176374415</li>
+<li>book: 0.0027922406844856497</li>
+<li>agent: 0.0027704090158266297</li>
+<li>car: 0.0024720166427097596</li>
+<li>morgan: 0.0024707563517500507</li>
+<li>murder: 0.002293111490203159</li>
+<li>mom: 0.0022732826397902166</li>
+<li>protect: 0.0022731044590835123</li>
+<li>secret: 0.002264817318793338</li>
+<li>daniel: 0.002241402537709192</li>
+<li>magic: 0.002206284430572807</li>
+<li>future: 0.0021768386140533402</li>
+<li>spell: 0.002169343877812866</li>
+<li>adam: 0.002153472220174327</li>
+<li>evil: 0.0021340868398977814</li>
+<li>jack: 0.0020897106351329695</li>
+<li>truth: 0.002062949138745198</li>
+<li>cole: 0.0020400368012834886</li>
+<li>crazy: 0.0020105532065742408</li>
+<li>death: 0.00198146862201309</li>
+<li>phone: 0.001979020483063652</li>
+<li>body: 0.0019660931341015826</li>
+<li>police: 0.001958672907502067</li>
+<li>safe: 0.0019143356058286412</li>
+<li>dude: 0.0018964209170578468</li>
+<li>date: 0.0018920208943585856</li>
+<li>whoa: 0.0017792852836430253</li>
+<li>gun: 0.0017526259382321181</li>
+<li>buddy: 0.0017511470972364838</li>
+<li>steal: 0.0017217289713015104</li>
+<li>huh: 0.0017172326247963943</li>
+<li>spy: 0.0017157371153423918</li>
+<li>mission: 0.0016669100513570204</li>
+<li>detective: 0.0016549250462397273</li>
+<li>alive: 0.0016514964918474878</li>
+<li>spencer: 0.0016442098038374946</li>
+</ol>
+
+<a href="?" style="font-size: 13.409643120950754px">adam</a>
+<a href="?" style="font-size: 17.25130041301027px">agent</a>
+<a href="?" style="font-size: 10.283846879336208px">alive</a>
+<a href="?" style="font-size: 12.24283602261632px">body</a>
+<a href="?" style="font-size: 17.387245925893925px">book</a>
+<a href="?" style="font-size: 10.9043698851751px">buddy</a>
+<a href="?" style="font-size: 15.393215039990277px">car</a>
+<a href="?" style="font-size: 50.0px">chuck</a>
+<a href="?" style="font-size: 12.703282263192134px">cole</a>
+<a href="?" style="font-size: 12.519688307686284px">crazy</a>
+<a href="?" style="font-size: 21.5814824754914px">dad</a>
+<a href="?" style="font-size: 13.957184048856924px">daniel</a>
+<a href="?" style="font-size: 11.781589162397854px">date</a>
+<a href="?" style="font-size: 12.338578983111587px">death</a>
+<a href="?" style="font-size: 28.62812165442098px">demon</a>
+<a href="?" style="font-size: 10.305196442330327px">detective</a>
+<a href="?" style="font-size: 11.808988045730743px">dude</a>
+<a href="?" style="font-size: 13.288930613569836px">evil</a>
+<a href="?" style="font-size: 21.5270925268658px">figure</a>
+<a href="?" style="font-size: 13.555145347543569px">future</a>
+<a href="?" style="font-size: 10.913578608556024px">gun</a>
+<a href="?" style="font-size: 21.522185705747486px">hey</a>
+<a href="?" style="font-size: 10.693184912461543px">huh</a>
+<a href="?" style="font-size: 13.012600571610813px">jack</a>
+<a href="?" style="font-size: 32.30458406957795px">leo</a>
+<a href="?" style="font-size: 13.738504058759766px">magic</a>
+<a href="?" style="font-size: 10.379826911170394px">mission</a>
+<a href="?" style="font-size: 14.155701024168273px">mom</a>
+<a href="?" style="font-size: 39.676388468457425px">monk</a>
+<a href="?" style="font-size: 15.385367224801424px">morgan</a>
+<a href="?" style="font-size: 14.279175014241266px">murder</a>
+<a href="?" style="font-size: 33.91918502037935px">phoebe</a>
+<a href="?" style="font-size: 12.323334454152768px">phone</a>
+<a href="?" style="font-size: 32.06563008982686px">piper</a>
+<a href="?" style="font-size: 12.196630369418695px">police</a>
+<a href="?" style="font-size: 39.19872072705608px">power</a>
+<a href="?" style="font-size: 14.154591495256982px">protect</a>
+<a href="?" style="font-size: 11.92054257649679px">safe</a>
+<a href="?" style="font-size: 27.814975908681376px">sarah</a>
+<a href="?" style="font-size: 14.102987581938105px">secret</a>
+<a href="?" style="font-size: 42.38383078746785px">shawn</a>
+<a href="?" style="font-size: 25.26883076985819px">sister</a>
+<a href="?" style="font-size: 13.508475723794122px">spell</a>
+<a href="?" style="font-size: 10.2384727691748px">spencer</a>
+<a href="?" style="font-size: 10.68387239481014px">spy</a>
+<a href="?" style="font-size: 10.721183602863436px">steal</a>
+<a href="?" style="font-size: 12.845957086461246px">truth</a>
+<a href="?" style="font-size: 20.145003415785002px">wan</a>
+<a href="?" style="font-size: 11.079586000919544px">whoa</a>
+<a href="?" style="font-size: 18.405523234747196px">witch</a>
+<div id="button"><input type="button" onClick="location.href='/index'" value="Change TV Shows selection" ></div></body>
+</html>
+

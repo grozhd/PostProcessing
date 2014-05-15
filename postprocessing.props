@@ -1,0 +1,42 @@
+### 1. File locations ###
+# path to the vocabulary file
+vocabularyFile=full_V3/vocabulary
+
+# path to the topics file (with distribution over vocabulary for each topic)
+topicsFile=full_V3/topics
+
+# path to the shows list file
+showsFile=full_V3/shows
+
+# path to the topic names file
+topicNamesFile=full_V3/topicNames
+
+# path to the topic proportions file (topic proportions for each show) 
+topicProportionFile=full_V3/topicProportions
+
+# path to the output directory
+outputDir=full_V3/results
+
+# path to the show info JSON file
+JSONShowsFile=imdb_ratings_merge.json
+
+### 2. Word cloud properties ###
+# max font size for the words in cloud
+maxFontSize=50.0
+
+# number of words to use per cloud
+cloudSize=50
+
+# number of topics to show in the list for each show
+topicListSize=50
+
+### 3. HTML properties ###
+# path to file with css for show pages
+cssShows=full_V3/shows.css
+
+# path to the file with css for topic pages
+cssTopics=full_V3/topics.css
+
+### 4. RecSys properties ###
+# path to inputRecSys file
+inputRecSysFile=full_V3/recSysInput

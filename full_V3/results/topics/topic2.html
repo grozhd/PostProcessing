@@ -1,0 +1,493 @@
+<html>
+<style>
+html {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+	body {
+		position:relative;
+		top:50px;
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		text-align:center;
+		font-size:20px;
+		background:url(../assets/images/dark-canvas.gif);
+		color: #FFFFFF;
+		}
+p { 
+
+	margin-top: 0; 
+
+	text-align: justify;
+
+	}
+
+h3 { 
+
+	font: italic normal 1.4em georgia, sans-serif;
+
+	letter-spacing: 1px; 
+
+	margin-bottom: 0; 
+
+	color: #7D775C;
+
+	}
+
+a:link { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #B7A5DF;
+
+	}
+
+a:visited { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #D4CDDC;
+
+	}
+
+a:hover, a:focus, a:active { 
+
+	text-decoration: underline; 
+
+	color: #9685BA;
+
+	}
+
+abbr {
+
+	border-bottom: none;
+
+	}
+
+
+
+
+
+/* specific divs */
+
+.page-wrapper { 
+
+	background: url(zen-bg.jpg) no-repeat top left; 
+
+	padding: 0 175px 0 110px;  
+
+	margin: 0; 
+
+	position: relative;
+
+	}
+
+
+
+.intro { 
+
+	min-width: 470px;
+
+	width: 100%;
+
+	}
+
+
+
+header h1 { 
+
+	background: transparent url(h1.gif) no-repeat top left;
+
+	margin-top: 10px;
+
+	display: block;
+
+	width: 219px;
+
+	height: 87px;
+
+	float: left;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header h2 { 
+
+	background: transparent url(h2.gif) no-repeat top left; 
+
+	margin-top: 58px; 
+
+	margin-bottom: 40px; 
+
+	width: 200px; 
+
+	height: 18px; 
+
+	float: right;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header {
+
+	padding-top: 20px;
+
+	height: 87px;
+
+}
+
+
+
+.summary {
+
+	clear: both; 
+
+	margin: 20px 20px 20px 10px; 
+
+	width: 160px; 
+
+	float: left;
+
+	}
+
+.summary p {
+
+	font: italic 1.1em/2.2 georgia; 
+
+	text-align: center;
+
+	}
+
+
+
+.preamble {
+
+	clear: right; 
+
+	padding: 0px 10px 0 10px;
+
+	}
+
+.supporting {	
+
+	padding-left: 10px; 
+
+	margin-bottom: 40px;
+
+	}
+
+
+
+footer { 
+
+	text-align: center; 
+
+	}
+
+footer a:link, footer a:visited { 
+
+	margin-right: 20px; 
+
+	}
+
+
+
+.sidebar {
+
+	margin-left: 600px; 
+
+	position: absolute; 
+
+	top: 0; 
+
+	right: 0;
+
+	}
+
+.sidebar .wrapper { 
+
+	font: 10px verdana, sans-serif; 
+
+	background: transparent url(paper-bg.jpg) top left repeat-y; 
+
+	padding: 10px; 
+
+	margin-top: 150px; 
+
+	width: 130px; 
+
+	}
+
+.sidebar h3.select { 
+
+	background: transparent url(h3.gif) no-repeat top left; 
+
+	margin: 10px 0 5px 0; 
+
+	width: 97px; 
+
+	height: 16px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.archives { 
+
+	background: transparent url(h5.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:57px; 
+
+	height: 14px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.resources { 
+
+	background: transparent url(h6.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:63px; 
+
+	height: 10px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+
+
+
+
+.sidebar ul {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+.sidebar li {
+
+	line-height: 1.3em; 
+
+	background: transparent url(cr1.gif) no-repeat top center; 
+
+	display: block; 
+
+	padding-top: 5px; 
+
+	margin-bottom: 5px;
+
+	list-style-type: none;
+
+	}
+
+.sidebar li a:link {
+
+	color: #988F5E;
+
+	}
+
+.sidebar li a:visited {
+
+	color: #B3AE94;
+
+	}
+
+
+
+
+
+.extra1 {
+
+	background: transparent url(cr2.gif) top left no-repeat; 
+
+	position: absolute; 
+
+	top: 40px; 
+
+	right: 0; 
+
+	width: 148px; 
+
+	height: 110px;
+
+	}
+	#button
+	{
+		padding-top:50px;
+	}
+	input
+	{
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		color: #FFFFFF;
+		background-color: transparent;
+		font-size:30px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 10px;
+	}	
+	ol{ 
+		color: #B7A5DF;
+		margin-left: auto;
+		margin-right: auto;
+		
+		text-align:center;
+	}
+	li {
+		list-style-position: inside;
+		left: -10px;
+	}</style>
+<body>
+<h1>TopicTwo</h1>
+<ol>
+<li>president: 0.009363250986739659</li>
+<li>sir: 0.005815887019865806</li>
+<li>honor: 0.005790111420309994</li>
+<li>client: 0.005408300511231508</li>
+<li>office: 0.005124927733126702</li>
+<li>court: 0.004241757778491964</li>
+<li>law: 0.003802950469308995</li>
+<li>state: 0.0037671576195256263</li>
+<li>lawyer: 0.003541186971766304</li>
+<li>judge: 0.003385252212068072</li>
+<li>win: 0.003292228307951098</li>
+<li>firm: 0.0028935424850542162</li>
+<li>vote: 0.0026746095703733216</li>
+<li>phone: 0.002506780527686468</li>
+<li>white: 0.00249306797188494</li>
+<li>meeting: 0.0024085806953328104</li>
+<li>par: 0.00237771982360992</li>
+<li>country: 0.0023721179229527403</li>
+<li>wan: 0.0023289752037895196</li>
+<li>press: 0.002304590582977417</li>
+<li>trial: 0.0022677662032234845</li>
+<li>offer: 0.002252318301133729</li>
+<li>peter: 0.0022038708033727105</li>
+<li>attorney: 0.002193515125347375</li>
+<li>wife: 0.0021308722115536563</li>
+<li>leo: 0.002096591662924146</li>
+<li>jury: 0.002043988506537542</li>
+<li>school: 0.0020112580339088377</li>
+<li>news: 0.002001151049653454</li>
+<li>write: 0.001966090575026282</li>
+<li>objection: 0.0019095778732564394</li>
+<li>public: 0.001773982788941463</li>
+<li>party: 0.0017729120324736375</li>
+<li>agree: 0.0017558306208430119</li>
+<li>witness: 0.00175221665604358</li>
+<li>campaign: 0.0017454392723590564</li>
+<li>government: 0.001703854240042868</li>
+<li>company: 0.00170188511828012</li>
+<li>american: 0.001669709461862811</li>
+<li>husband: 0.001666755905375772</li>
+<li>josh: 0.0015964640060202695</li>
+<li>truth: 0.0015890524756489242</li>
+<li>issue: 0.0015548325101145178</li>
+<li>charge: 0.0014988236608912174</li>
+<li>report: 0.0014934561106025083</li>
+<li>defense: 0.0014820015482672497</li>
+<li>file: 0.001465732718920778</li>
+<li>evidence: 0.001443031896879796</li>
+<li>sue: 0.0014408504957635787</li>
+<li>record: 0.0014315966506307492</li>
+</ol>
+
+<a href="?" style="font-size: 9.376180470488503px">agree</a>
+<a href="?" style="font-size: 8.916291276542049px">american</a>
+<a href="?" style="font-size: 11.713426930741553px">attorney</a>
+<a href="?" style="font-size: 9.320690403530607px">campaign</a>
+<a href="?" style="font-size: 8.003756724100787px">charge</a>
+<a href="?" style="font-size: 28.88046320071311px">client</a>
+<a href="?" style="font-size: 9.08811010561582px">company</a>
+<a href="?" style="font-size: 12.667170442788303px">country</a>
+<a href="?" style="font-size: 22.651095140454895px">court</a>
+<a href="?" style="font-size: 7.913926211985969px">defense</a>
+<a href="?" style="font-size: 7.705827275822435px">evidence</a>
+<a href="?" style="font-size: 7.827050246738899px">file</a>
+<a href="?" style="font-size: 15.45159095463789px">firm</a>
+<a href="?" style="font-size: 9.098625266245056px">government</a>
+<a href="?" style="font-size: 30.919343230839452px">honor</a>
+<a href="?" style="font-size: 8.900519209280251px">husband</a>
+<a href="?" style="font-size: 8.302845412968685px">issue</a>
+<a href="?" style="font-size: 8.52515866701213px">josh</a>
+<a href="?" style="font-size: 18.07733348631957px">judge</a>
+<a href="?" style="font-size: 10.91495095791121px">jury</a>
+<a href="?" style="font-size: 20.307852874470502px">law</a>
+<a href="?" style="font-size: 18.910029095563992px">lawyer</a>
+<a href="?" style="font-size: 11.195853159833923px">leo</a>
+<a href="?" style="font-size: 12.861882580867851px">meeting</a>
+<a href="?" style="font-size: 10.686197841366779px">news</a>
+<a href="?" style="font-size: 10.197194734824501px">objection</a>
+<a href="?" style="font-size: 12.027437395000346px">offer</a>
+<a href="?" style="font-size: 27.367245310334425px">office</a>
+<a href="?" style="font-size: 12.697084735725198px">par</a>
+<a href="?" style="font-size: 9.467395645937803px">party</a>
+<a href="?" style="font-size: 11.768726516537136px">peter</a>
+<a href="?" style="font-size: 13.386272199883345px">phone</a>
+<a href="?" style="font-size: 50.0px">president</a>
+<a href="?" style="font-size: 12.306572718392381px">press</a>
+<a href="?" style="font-size: 9.473113512890968px">public</a>
+<a href="?" style="font-size: 7.644762768071647px">record</a>
+<a href="?" style="font-size: 7.975093868131686px">report</a>
+<a href="?" style="font-size: 10.740169396063418px">school</a>
+<a href="?" style="font-size: 31.056985592409784px">sir</a>
+<a href="?" style="font-size: 20.11671814020962px">state</a>
+<a href="?" style="font-size: 7.6941785380106085px">sue</a>
+<a href="?" style="font-size: 12.109929587678044px">trial</a>
+<a href="?" style="font-size: 8.485580905068966px">truth</a>
+<a href="?" style="font-size: 14.282483584820774px">vote</a>
+<a href="?" style="font-size: 12.43678721785756px">wan</a>
+<a href="?" style="font-size: 13.313046800815501px">white</a>
+<a href="?" style="font-size: 11.37891216721319px">wife</a>
+<a href="?" style="font-size: 17.58058345660919px">win</a>
+<a href="?" style="font-size: 9.356881805929847px">witness</a>
+<a href="?" style="font-size: 10.49897400919126px">write</a>
+<div id="button"><input type="button" onClick="location.href='/index'" value="Change TV Shows selection" ></div></body>
+</html>
+

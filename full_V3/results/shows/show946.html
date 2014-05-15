@@ -1,0 +1,566 @@
+<html>
+<style>
+html {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+	body {
+		position:relative;
+		top:50px;
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		text-align:center;
+		font-size:20px;
+		background:url(../assets/images/dark-canvas.gif);
+		color: #FFFFFF;
+		}
+p { 
+
+	margin-top: 0; 
+
+	text-align: justify;
+
+	}
+
+h3 { 
+
+	font: italic normal 1.4em georgia, sans-serif;
+
+	letter-spacing: 1px; 
+
+	margin-bottom: 0; 
+
+	color: #7D775C;
+
+	}
+
+a:link { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #B7A5DF;
+
+	}
+
+a:visited { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #D4CDDC;
+
+	}
+
+a:hover, a:focus, a:active { 
+
+	text-decoration: underline; 
+
+	color: #9685BA;
+
+	}
+
+abbr {
+
+	border-bottom: none;
+
+	}
+
+
+
+
+
+/* specific divs */
+
+.page-wrapper { 
+
+	background: url(zen-bg.jpg) no-repeat top left; 
+
+	padding: 0 175px 0 110px;  
+
+	margin: 0; 
+
+	position: relative;
+
+	}
+
+
+
+.intro { 
+
+	min-width: 470px;
+
+	width: 100%;
+
+	}
+
+
+
+header h1 { 
+
+	background: transparent url(h1.gif) no-repeat top left;
+
+	margin-top: 10px;
+
+	display: block;
+
+	width: 219px;
+
+	height: 87px;
+
+	float: left;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header h2 { 
+
+	background: transparent url(h2.gif) no-repeat top left; 
+
+	margin-top: 58px; 
+
+	margin-bottom: 40px; 
+
+	width: 200px; 
+
+	height: 18px; 
+
+	float: right;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header {
+
+	padding-top: 20px;
+
+	height: 87px;
+
+}
+
+
+
+.summary {
+
+	clear: both; 
+
+	margin: 20px 20px 20px 10px; 
+
+	width: 160px; 
+
+	float: left;
+
+	}
+
+.summary p {
+
+	font: italic 1.1em/2.2 georgia; 
+
+	text-align: center;
+
+	}
+
+
+
+.preamble {
+
+	clear: right; 
+
+	padding: 0px 10px 0 10px;
+
+	}
+
+.supporting {	
+
+	padding-left: 10px; 
+
+	margin-bottom: 40px;
+
+	}
+
+
+
+footer { 
+
+	text-align: center; 
+
+	}
+
+footer a:link, footer a:visited { 
+
+	margin-right: 20px; 
+
+	}
+
+
+
+.sidebar {
+
+	margin-left: 600px; 
+
+	position: absolute; 
+
+	top: 0; 
+
+	right: 0;
+
+	}
+
+.sidebar .wrapper { 
+
+	font: 10px verdana, sans-serif; 
+
+	background: transparent url(paper-bg.jpg) top left repeat-y; 
+
+	padding: 10px; 
+
+	margin-top: 150px; 
+
+	width: 130px; 
+
+	}
+
+.sidebar h3.select { 
+
+	background: transparent url(h3.gif) no-repeat top left; 
+
+	margin: 10px 0 5px 0; 
+
+	width: 97px; 
+
+	height: 16px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.archives { 
+
+	background: transparent url(h5.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:57px; 
+
+	height: 14px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.resources { 
+
+	background: transparent url(h6.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:63px; 
+
+	height: 10px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+
+
+
+
+.sidebar ul {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+.sidebar li {
+
+	line-height: 1.3em; 
+
+	background: transparent url(cr1.gif) no-repeat top center; 
+
+	display: block; 
+
+	padding-top: 5px; 
+
+	margin-bottom: 5px;
+
+	list-style-type: none;
+
+	}
+
+.sidebar li a:link {
+
+	color: #988F5E;
+
+	}
+
+.sidebar li a:visited {
+
+	color: #B3AE94;
+
+	}
+
+
+
+
+
+.extra1 {
+
+	background: transparent url(cr2.gif) top left no-repeat; 
+
+	position: absolute; 
+
+	top: 40px; 
+
+	right: 0; 
+
+	width: 148px; 
+
+	height: 110px;
+
+	}
+	
+	h1 + ol{ 
+		color: #B7A5DF;
+		float: left;
+		margin-left: 18%;
+	}
+	h1 + ol + ol { 
+		float: right;
+		color: #0685BA;
+		margin-right: 18%;
+	
+	}
+	#piechart {
+	    clear: both;
+		text-align:center;
+		margin-left: 18%;
+	
+	}
+	#button
+	{
+		padding-top:50px;
+	}
+	
+	input
+	{
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		color: #FFFFFF;
+		background-color: transparent;
+		font-size:30px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 10px;
+	}</style>
+<body>
+<h1>Show 946: The Outer Limits (1963)</h1>
+<p> Rating: NaN</p>
+<p> Genre: null</p>
+<p> Plot: null</p>
+<p> Poster: <img src="null"> </p>
+<ol>
+<li>sir: 0.00618204252378011</li>
+<li>ship: 0.005179262377761867</li>
+<li>captain: 0.004912459329376182</li>
+<li>planet: 0.0030085860703553823</li>
+<li>earth: 0.0027777710004497063</li>
+<li>system: 0.0026134436325973343</li>
+<li>power: 0.002429789332389835</li>
+<li>human: 0.002424390280645324</li>
+<li>doctor: 0.002200773197980512</li>
+<li>commander: 0.0021902601260351427</li>
+<li>fuck: 0.0017862626762974554</li>
+<li>control: 0.0017775966115196012</li>
+<li>space: 0.0017271193158517482</li>
+<li>weapon: 0.001701450540913579</li>
+<li>colonel: 0.0016425737334982654</li>
+<li>destroy: 0.0016061735783413009</li>
+<li>computer: 0.0014808034454829653</li>
+<li>mission: 0.001480548966605212</li>
+<li>alien: 0.0014544560872507652</li>
+<li>force: 0.0014477357930116042</li>
+<li>attack: 0.0014326990066429583</li>
+<li>report: 0.001432274230396532</li>
+<li>star: 0.0013543184865292977</li>
+<li>return: 0.001311131431988795</li>
+<li>universe: 0.0012599358480647536</li>
+<li>war: 0.0012564455013170902</li>
+<li>lieutenant: 0.001239805872406107</li>
+<li>major: 0.001184319241383548</li>
+<li>security: 0.001175558647518366</li>
+<li>command: 0.0011621864829941067</li>
+<li>team: 0.001145754874920171</li>
+<li>energy: 0.0011386715447947722</li>
+<li>begin: 0.001123428962034446</li>
+<li>crew: 0.0011010800352940356</li>
+<li>field: 0.001078254680418966</li>
+<li>contact: 0.0010408936320634742</li>
+<li>death: 0.0010221342317246534</li>
+<li>general: 9.985045230647763E-4</li>
+<li>station: 9.883642164830798E-4</li>
+<li>alive: 9.732390766120167E-4</li>
+<li>create: 9.335556039101801E-4</li>
+<li>datum: 9.105637306369833E-4</li>
+<li>form: 9.094061555659375E-4</li>
+<li>signal: 9.088135271463464E-4</li>
+<li>body: 9.001701459304994E-4</li>
+<li>information: 8.88355937428786E-4</li>
+<li>officer: 8.820306300927845E-4</li>
+<li>agent: 8.610241621279571E-4</li>
+<li>base: 8.467441382137889E-4</li>
+<li>program: 8.32750748057127E-4</li>
+</ol>
+<ol>
+<li>Topic11: 0.5849522894942631</li>
+<li>TopicOne: 0.13554027202479751</li>
+<li>Topic16: 0.09842820717827021</li>
+<li>Topic18: 0.08351310389649436</li>
+<li>Topic17: 0.06650288737235045</li>
+<li>Topic15: 0.02476089764703212</li>
+<li>Topic5: 0.006288613058192307</li>
+<li>Topic7: 2.532631806286505E-6</li>
+<li>Topic14: 2.4153921208670488E-6</li>
+<li>Topic9: 1.2934838422915852E-6</li>
+<li>TopicZero: 1.1240361470074131E-6</li>
+<li>TopicThree: 9.200571315022137E-7</li>
+<li>Topic12: 9.082159388208276E-7</li>
+<li>Topic4: 7.644086414040079E-7</li>
+<li>TopicTwo: 7.298747492169746E-7</li>
+<li>Topic6: 7.112460216347047E-7</li>
+<li>Topic10: 6.954740249233594E-7</li>
+<li>Topic8: 6.275740192161729E-7</li>
+<li>Topic19: 5.662855878920236E-7</li>
+<li>Topic13: 4.4064856869562915E-7</li>
+</ol>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart(){
+var data = google.visualization.arrayToDataTable([
+['Topic Name', 'Probability'],
+['Topic11', 58],
+['TopicOne', 13],
+['Topic16', 9],
+['Topic18', 8],
+['Topic17', 6],
+['Topic15', 2],
+['Topic5', 0],
+['Topic7', 0],
+['Topic14', 0],
+['Topic9', 0],
+['TopicZero', 0],
+['TopicThree', 0],
+['Topic12', 0],
+['Topic4', 0],
+['TopicTwo', 0],
+['Topic6', 0],
+['Topic10', 0],
+['Topic8', 0],
+['Topic19', 0],
+['Topic13', 1],
+['Other Topics', 3],
+]);
+var options = {
+title: 'Topic repartition',
+titleTextStyle: {color: "white"}, 
+backgroundColor: "transparent", 
+legend: {textStyle: {color: 'white', fontSize: 12}} 
+};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);
+}
+</script>
+<div id="piechart" style="width: 900px; height: 500px;"></div>
+<a href="../topics/topic1.html" style="font-size: 6.963913292539679px">agent</a>
+<a href="../topics/topic11.html" style="font-size: 11.763556151999861px">alien</a>
+<a href="../topics/topic11.html" style="font-size: 7.871500987483615px">alive</a>
+<a href="../topics/topic11.html" style="font-size: 11.587586150789782px">attack</a>
+<a href="../topics/topic11.html" style="font-size: 6.848417290536797px">base</a>
+<a href="../topics/topic11.html" style="font-size: 9.086228036389397px">begin</a>
+<a href="../topics/topic11.html" style="font-size: 7.2805237303679675px">body</a>
+<a href="../topics/topic11.html" style="font-size: 39.73168504163232px">captain</a>
+<a href="../topics/topic11.html" style="font-size: 13.285040722219806px">colonel</a>
+<a href="../topics/topic11.html" style="font-size: 9.399696609361634px">command</a>
+<a href="../topics/topic11.html" style="font-size: 17.714696377532135px">commander</a>
+<a href="../topics/topic11.html" style="font-size: 11.976652051379808px">computer</a>
+<a href="../topics/topic11.html" style="font-size: 8.418687092975567px">contact</a>
+<a href="../topics/topic11.html" style="font-size: 14.377097898322615px">control</a>
+<a href="../topics/topic11.html" style="font-size: 7.550543370731639px">create</a>
+<a href="../topics/topic11.html" style="font-size: 8.905471218117427px">crew</a>
+<a href="../topics/topic11.html" style="font-size: 7.364586438336277px">datum</a>
+<a href="../topics/topic11.html" style="font-size: 8.266962155249402px">death</a>
+<a href="../topics/topic11.html" style="font-size: 12.990638386608671px">destroy</a>
+<a href="../topics/topic11.html" style="font-size: 17.799725491331735px">doctor</a>
+<a href="../topics/topic11.html" style="font-size: 22.466450123600843px">earth</a>
+<a href="../topics/topic11.html" style="font-size: 9.209509158297676px">energy</a>
+<a href="../topics/topic11.html" style="font-size: 8.720861076831042px">field</a>
+<a href="../topics/topic11.html" style="font-size: 11.709202803464077px">force</a>
+<a href="../topics/topic11.html" style="font-size: 7.355224038558266px">form</a>
+<a href="../topics/topic18.html" style="font-size: 14.44718852568824px">fuck</a>
+<a href="../topics/topic11.html" style="font-size: 8.07584644738277px">general</a>
+<a href="../topics/topic11.html" style="font-size: 19.608327436438362px">human</a>
+<a href="../topics/topic11.html" style="font-size: 7.184971099855734px">information</a>
+<a href="../topics/topic11.html" style="font-size: 10.02747771175155px">lieutenant</a>
+<a href="../topics/topic11.html" style="font-size: 9.578705070596772px">major</a>
+<a href="../topics/topic11.html" style="font-size: 11.97459384103287px">mission</a>
+<a href="../topics/topic11.html" style="font-size: 7.1338123823956865px">officer</a>
+<a href="../topics/topic11.html" style="font-size: 24.333268970428673px">planet</a>
+<a href="../topics/topic11.html" style="font-size: 19.65199465260311px">power</a>
+<a href="../topics/topic11.html" style="font-size: 6.735239565676168px">program</a>
+<a href="../topics/topic11.html" style="font-size: 11.58415058524011px">report</a>
+<a href="../topics/topic11.html" style="font-size: 10.604354684922829px">return</a>
+<a href="../topics/topic11.html" style="font-size: 9.507849897476534px">security</a>
+<a href="../topics/topic11.html" style="font-size: 41.88957256310592px">ship</a>
+<a href="../topics/topic11.html" style="font-size: 7.350430894404764px">signal</a>
+<a href="../topics/topic11.html" style="font-size: 50.0px">sir</a>
+<a href="../topics/topic11.html" style="font-size: 13.968840469861998px">space</a>
+<a href="../topics/topic11.html" style="font-size: 10.953649067599569px">star</a>
+<a href="../topics/topic11.html" style="font-size: 7.993832238141323px">station</a>
+<a href="../topics/topic11.html" style="font-size: 21.137379939917512px">system</a>
+<a href="../topics/topic11.html" style="font-size: 9.266798719944589px">team</a>
+<a href="../topics/topic11.html" style="font-size: 10.190287782866507px">universe</a>
+<a href="../topics/topic11.html" style="font-size: 10.162058061587194px">war</a>
+<a href="../topics/topic11.html" style="font-size: 13.761232912655538px">weapon</a>
+<div id="button"><input type="button" onClick="location.href='/index'" value="Change TV Shows selection" ></div></body>
+</html>
+

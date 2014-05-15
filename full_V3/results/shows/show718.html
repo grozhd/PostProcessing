@@ -1,0 +1,566 @@
+<html>
+<style>
+html {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+	body {
+		position:relative;
+		top:50px;
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		text-align:center;
+		font-size:20px;
+		background:url(../assets/images/dark-canvas.gif);
+		color: #FFFFFF;
+		}
+p { 
+
+	margin-top: 0; 
+
+	text-align: justify;
+
+	}
+
+h3 { 
+
+	font: italic normal 1.4em georgia, sans-serif;
+
+	letter-spacing: 1px; 
+
+	margin-bottom: 0; 
+
+	color: #7D775C;
+
+	}
+
+a:link { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #B7A5DF;
+
+	}
+
+a:visited { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #D4CDDC;
+
+	}
+
+a:hover, a:focus, a:active { 
+
+	text-decoration: underline; 
+
+	color: #9685BA;
+
+	}
+
+abbr {
+
+	border-bottom: none;
+
+	}
+
+
+
+
+
+/* specific divs */
+
+.page-wrapper { 
+
+	background: url(zen-bg.jpg) no-repeat top left; 
+
+	padding: 0 175px 0 110px;  
+
+	margin: 0; 
+
+	position: relative;
+
+	}
+
+
+
+.intro { 
+
+	min-width: 470px;
+
+	width: 100%;
+
+	}
+
+
+
+header h1 { 
+
+	background: transparent url(h1.gif) no-repeat top left;
+
+	margin-top: 10px;
+
+	display: block;
+
+	width: 219px;
+
+	height: 87px;
+
+	float: left;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header h2 { 
+
+	background: transparent url(h2.gif) no-repeat top left; 
+
+	margin-top: 58px; 
+
+	margin-bottom: 40px; 
+
+	width: 200px; 
+
+	height: 18px; 
+
+	float: right;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header {
+
+	padding-top: 20px;
+
+	height: 87px;
+
+}
+
+
+
+.summary {
+
+	clear: both; 
+
+	margin: 20px 20px 20px 10px; 
+
+	width: 160px; 
+
+	float: left;
+
+	}
+
+.summary p {
+
+	font: italic 1.1em/2.2 georgia; 
+
+	text-align: center;
+
+	}
+
+
+
+.preamble {
+
+	clear: right; 
+
+	padding: 0px 10px 0 10px;
+
+	}
+
+.supporting {	
+
+	padding-left: 10px; 
+
+	margin-bottom: 40px;
+
+	}
+
+
+
+footer { 
+
+	text-align: center; 
+
+	}
+
+footer a:link, footer a:visited { 
+
+	margin-right: 20px; 
+
+	}
+
+
+
+.sidebar {
+
+	margin-left: 600px; 
+
+	position: absolute; 
+
+	top: 0; 
+
+	right: 0;
+
+	}
+
+.sidebar .wrapper { 
+
+	font: 10px verdana, sans-serif; 
+
+	background: transparent url(paper-bg.jpg) top left repeat-y; 
+
+	padding: 10px; 
+
+	margin-top: 150px; 
+
+	width: 130px; 
+
+	}
+
+.sidebar h3.select { 
+
+	background: transparent url(h3.gif) no-repeat top left; 
+
+	margin: 10px 0 5px 0; 
+
+	width: 97px; 
+
+	height: 16px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.archives { 
+
+	background: transparent url(h5.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:57px; 
+
+	height: 14px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.resources { 
+
+	background: transparent url(h6.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:63px; 
+
+	height: 10px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+
+
+
+
+.sidebar ul {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+.sidebar li {
+
+	line-height: 1.3em; 
+
+	background: transparent url(cr1.gif) no-repeat top center; 
+
+	display: block; 
+
+	padding-top: 5px; 
+
+	margin-bottom: 5px;
+
+	list-style-type: none;
+
+	}
+
+.sidebar li a:link {
+
+	color: #988F5E;
+
+	}
+
+.sidebar li a:visited {
+
+	color: #B3AE94;
+
+	}
+
+
+
+
+
+.extra1 {
+
+	background: transparent url(cr2.gif) top left no-repeat; 
+
+	position: absolute; 
+
+	top: 40px; 
+
+	right: 0; 
+
+	width: 148px; 
+
+	height: 110px;
+
+	}
+	
+	h1 + ol{ 
+		color: #B7A5DF;
+		float: left;
+		margin-left: 18%;
+	}
+	h1 + ol + ol { 
+		float: right;
+		color: #0685BA;
+		margin-right: 18%;
+	
+	}
+	#piechart {
+	    clear: both;
+		text-align:center;
+		margin-left: 18%;
+	
+	}
+	#button
+	{
+		padding-top:50px;
+	}
+	
+	input
+	{
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		color: #FFFFFF;
+		background-color: transparent;
+		font-size:30px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 10px;
+	}</style>
+<body>
+<h1>Show 718: Sanctuary Webepisodes</h1>
+<p> Rating: 7.4</p>
+<p> Genre: Crime, Mystery, Sci-Fi</p>
+<p> Plot: Stem cells, gene therapy, transplants, and cloning have changed the definition of "humanity" in the modern world, but the darker side contains monsters that only few are brave enough to face, because the future lies in their hands.</p>
+<p> Poster: <img src="http://ia.media-imdb.com/images/M/MV5BMTQ4MTI1NTQ3NV5BMl5BanBnXkFtZTcwNDI4Mjc5MQ@@._V1_SX300.jpg"> </p>
+<ol>
+<li>sir: 0.004863946570313844</li>
+<li>agent: 0.0029347383908950283</li>
+<li>body: 0.002617324881258359</li>
+<li>victim: 0.0025870946853632864</li>
+<li>king: 0.0023899232528090198</li>
+<li>murder: 0.0021586139505696276</li>
+<li>blood: 0.0021154948271685354</li>
+<li>fuck: 0.0021030295715297165</li>
+<li>lord: 0.0020880229331864506</li>
+<li>car: 0.002049581319479844</li>
+<li>dialogue: 0.0016092752996368785</li>
+<li>war: 0.0015975702745044868</li>
+<li>effect: 0.0014670717333910483</li>
+<li>brother: 0.0014641088102359129</li>
+<li>killer: 0.0014522796985144359</li>
+<li>death: 0.0014482148287256644</li>
+<li>evidence: 0.0013997832614385474</li>
+<li>gun: 0.0013822880304820717</li>
+<li>style: 0.0013788061497284644</li>
+<li>layer: 0.0012789452750671577</li>
+<li>phone: 0.0012778973242869003</li>
+<li>death: 0.0012564176093694858</li>
+<li>shoot: 0.001237700438311085</li>
+<li>default: 0.0012356117990376177</li>
+<li>bone: 0.0012235055340102296</li>
+<li>par: 0.0012114420175510666</li>
+<li>crime: 0.0012046745117887034</li>
+<li>match: 0.0011717834821763605</li>
+<li>scene: 0.0011652788433684582</li>
+<li>return: 0.0011624111649711087</li>
+<li>sir: 0.0011271315380698096</li>
+<li>wife: 0.0010825541611889798</li>
+<li>marry: 0.0010621191693844074</li>
+<li>power: 0.0010091675167132768</li>
+<li>weapon: 9.994059564352048E-4</li>
+<li>suspect: 9.7755307204875E-4</li>
+<li>print: 9.685179395678234E-4</li>
+<li>walter: 9.531892305985898E-4</li>
+<li>lab: 9.361297375442374E-4</li>
+<li>richard: 9.34988590259159E-4</li>
+<li>officer: 9.29458582301007E-4</li>
+<li>army: 8.988354951225686E-4</li>
+<li>sister: 8.98014991533622E-4</li>
+<li>hercules: 8.926857110188947E-4</li>
+<li>wound: 8.846729558246166E-4</li>
+<li>wife: 8.802967796210839E-4</li>
+<li>figure: 8.772947038146616E-4</li>
+<li>tony: 8.727102030783973E-4</li>
+<li>booth: 8.722595671040147E-4</li>
+<li>record: 8.688825403502966E-4</li>
+</ol>
+<ol>
+<li>TopicOne: 0.4619791839992699</li>
+<li>Topic14: 0.43960059107026656</li>
+<li>Topic18: 0.09832290034106637</li>
+<li>Topic7: 1.562234709546664E-5</li>
+<li>Topic9: 7.978756918592347E-6</li>
+<li>Topic15: 7.585637865293568E-6</li>
+<li>TopicZero: 6.933531669629906E-6</li>
+<li>Topic11: 6.88142765150722E-6</li>
+<li>TopicThree: 5.675302592468474E-6</li>
+<li>Topic12: 5.602261094042322E-6</li>
+<li>Topic4: 4.715196693472977E-6</li>
+<li>TopicTwo: 4.502177000296863E-6</li>
+<li>Topic17: 4.495969102499228E-6</li>
+<li>Topic6: 4.3872671079411295E-6</li>
+<li>Topic16: 4.303305168994754E-6</li>
+<li>Topic10: 4.289978743165178E-6</li>
+<li>Topic5: 4.269091054242801E-6</li>
+<li>Topic8: 3.871142710896792E-6</li>
+<li>Topic19: 3.493089673457309E-6</li>
+<li>Topic13: 2.7181072551469154E-6</li>
+</ol>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart(){
+var data = google.visualization.arrayToDataTable([
+['Topic Name', 'Probability'],
+['TopicOne', 46],
+['Topic14', 43],
+['Topic18', 9],
+['Topic7', 0],
+['Topic9', 0],
+['Topic15', 0],
+['TopicZero', 0],
+['Topic11', 0],
+['TopicThree', 0],
+['Topic12', 0],
+['Topic4', 0],
+['TopicTwo', 0],
+['Topic17', 0],
+['Topic6', 0],
+['Topic16', 0],
+['Topic10', 0],
+['Topic5', 0],
+['Topic8', 0],
+['Topic19', 0],
+['Topic13', 1],
+['Other Topics', 1],
+]);
+var options = {
+title: 'Topic repartition',
+titleTextStyle: {color: "white"}, 
+backgroundColor: "transparent", 
+legend: {textStyle: {color: 'white', fontSize: 12}} 
+};
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);
+}
+</script>
+<div id="piechart" style="width: 900px; height: 500px;"></div>
+<a href="../topics/topic1.html" style="font-size: 30.168283599234375px">agent</a>
+<a href="../topics/topic14.html" style="font-size: 9.23977558273807px">army</a>
+<a href="../topics/topic1.html" style="font-size: 21.7466906408887px">blood</a>
+<a href="../topics/topic1.html" style="font-size: 26.905362172692175px">body</a>
+<a href="../topics/topic1.html" style="font-size: 12.577292084967162px">bone</a>
+<a href="../topics/topic1.html" style="font-size: 8.966582532255618px">booth</a>
+<a href="../topics/topic14.html" style="font-size: 15.050625958473901px">brother</a>
+<a href="../topics/topic1.html" style="font-size: 21.06911835739589px">car</a>
+<a href="../topics/topic1.html" style="font-size: 12.383714483432044px">crime</a>
+<a href="../topics/topic1.html" style="font-size: 14.887240307742722px">death</a>
+<a href="../topics/topic14.html" style="font-size: 12.915618944478002px">death*</a>
+<a href="../topics/topic14.html" style="font-size: 12.70174107769743px">default</a>
+<a href="../topics/topic14.html" style="font-size: 16.54289655913141px">dialogue</a>
+<a href="../topics/topic14.html" style="font-size: 15.081083973506582px">effect</a>
+<a href="../topics/topic1.html" style="font-size: 14.389377444870114px">evidence</a>
+<a href="../topics/topic1.html" style="font-size: 9.01834231865395px">figure</a>
+<a href="../topics/topic18.html" style="font-size: 21.61855132584258px">fuck</a>
+<a href="../topics/topic1.html" style="font-size: 14.20953140109103px">gun</a>
+<a href="../topics/topic14.html" style="font-size: 9.176557535266003px">hercules</a>
+<a href="../topics/topic1.html" style="font-size: 14.929026023621885px">killer</a>
+<a href="../topics/topic14.html" style="font-size: 24.567737517877493px">king</a>
+<a href="../topics/topic1.html" style="font-size: 9.623149884681341px">lab</a>
+<a href="../topics/topic14.html" style="font-size: 13.147196999170927px">layer</a>
+<a href="../topics/topic14.html" style="font-size: 21.46428731279959px">lord</a>
+<a href="../topics/topic14.html" style="font-size: 10.918285738034687px">marry</a>
+<a href="../topics/topic1.html" style="font-size: 12.045603968268424px">match</a>
+<a href="../topics/topic1.html" style="font-size: 22.18994307774997px">murder</a>
+<a href="../topics/topic1.html" style="font-size: 9.554572288825883px">officer</a>
+<a href="../topics/topic14.html" style="font-size: 12.453282535470974px">par</a>
+<a href="../topics/topic1.html" style="font-size: 13.136424360480223px">phone</a>
+<a href="../topics/topic14.html" style="font-size: 10.373957671251318px">power</a>
+<a href="../topics/topic1.html" style="font-size: 9.956091473937903px">print</a>
+<a href="../topics/topic1.html" style="font-size: 8.931867648930941px">record</a>
+<a href="../topics/topic14.html" style="font-size: 11.949259188676745px">return</a>
+<a href="../topics/topic14.html" style="font-size: 9.611419212185439px">richard</a>
+<a href="../topics/topic1.html" style="font-size: 11.978738114440977px">scene</a>
+<a href="../topics/topic1.html" style="font-size: 12.723211700814621px">shoot</a>
+<a href="../topics/topic14.html" style="font-size: 50.0px">sir</a>
+<a href="../topics/topic1.html" style="font-size: 11.586594566529973px">sir*</a>
+<a href="../topics/topic14.html" style="font-size: 9.231341037075556px">sister</a>
+<a href="../topics/topic14.html" style="font-size: 14.173738648197132px">style</a>
+<a href="../topics/topic1.html" style="font-size: 10.048970089587906px">suspect</a>
+<a href="../topics/topic1.html" style="font-size: 8.971214943075392px">tony</a>
+<a href="../topics/topic1.html" style="font-size: 26.59460427827392px">victim</a>
+<a href="../topics/topic1.html" style="font-size: 9.798516665624945px">walter</a>
+<a href="../topics/topic14.html" style="font-size: 16.422572199445483px">war</a>
+<a href="../topics/topic1.html" style="font-size: 10.273611582566362px">weapon</a>
+<a href="../topics/topic14.html" style="font-size: 11.128351694857622px">wife</a>
+<a href="../topics/topic1.html" style="font-size: 9.049202811907977px">wife*</a>
+<a href="../topics/topic1.html" style="font-size: 9.094188669999447px">wound</a>
+<div id="button"><input type="button" onClick="location.href='/index'" value="Change TV Shows selection" ></div></body>
+</html>
+

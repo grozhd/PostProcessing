@@ -1,0 +1,493 @@
+<html>
+<style>
+html {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+	body {
+		position:relative;
+		top:50px;
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		text-align:center;
+		font-size:20px;
+		background:url(../assets/images/dark-canvas.gif);
+		color: #FFFFFF;
+		}
+p { 
+
+	margin-top: 0; 
+
+	text-align: justify;
+
+	}
+
+h3 { 
+
+	font: italic normal 1.4em georgia, sans-serif;
+
+	letter-spacing: 1px; 
+
+	margin-bottom: 0; 
+
+	color: #7D775C;
+
+	}
+
+a:link { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #B7A5DF;
+
+	}
+
+a:visited { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #D4CDDC;
+
+	}
+
+a:hover, a:focus, a:active { 
+
+	text-decoration: underline; 
+
+	color: #9685BA;
+
+	}
+
+abbr {
+
+	border-bottom: none;
+
+	}
+
+
+
+
+
+/* specific divs */
+
+.page-wrapper { 
+
+	background: url(zen-bg.jpg) no-repeat top left; 
+
+	padding: 0 175px 0 110px;  
+
+	margin: 0; 
+
+	position: relative;
+
+	}
+
+
+
+.intro { 
+
+	min-width: 470px;
+
+	width: 100%;
+
+	}
+
+
+
+header h1 { 
+
+	background: transparent url(h1.gif) no-repeat top left;
+
+	margin-top: 10px;
+
+	display: block;
+
+	width: 219px;
+
+	height: 87px;
+
+	float: left;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header h2 { 
+
+	background: transparent url(h2.gif) no-repeat top left; 
+
+	margin-top: 58px; 
+
+	margin-bottom: 40px; 
+
+	width: 200px; 
+
+	height: 18px; 
+
+	float: right;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header {
+
+	padding-top: 20px;
+
+	height: 87px;
+
+}
+
+
+
+.summary {
+
+	clear: both; 
+
+	margin: 20px 20px 20px 10px; 
+
+	width: 160px; 
+
+	float: left;
+
+	}
+
+.summary p {
+
+	font: italic 1.1em/2.2 georgia; 
+
+	text-align: center;
+
+	}
+
+
+
+.preamble {
+
+	clear: right; 
+
+	padding: 0px 10px 0 10px;
+
+	}
+
+.supporting {	
+
+	padding-left: 10px; 
+
+	margin-bottom: 40px;
+
+	}
+
+
+
+footer { 
+
+	text-align: center; 
+
+	}
+
+footer a:link, footer a:visited { 
+
+	margin-right: 20px; 
+
+	}
+
+
+
+.sidebar {
+
+	margin-left: 600px; 
+
+	position: absolute; 
+
+	top: 0; 
+
+	right: 0;
+
+	}
+
+.sidebar .wrapper { 
+
+	font: 10px verdana, sans-serif; 
+
+	background: transparent url(paper-bg.jpg) top left repeat-y; 
+
+	padding: 10px; 
+
+	margin-top: 150px; 
+
+	width: 130px; 
+
+	}
+
+.sidebar h3.select { 
+
+	background: transparent url(h3.gif) no-repeat top left; 
+
+	margin: 10px 0 5px 0; 
+
+	width: 97px; 
+
+	height: 16px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.archives { 
+
+	background: transparent url(h5.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:57px; 
+
+	height: 14px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.resources { 
+
+	background: transparent url(h6.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:63px; 
+
+	height: 10px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+
+
+
+
+.sidebar ul {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+.sidebar li {
+
+	line-height: 1.3em; 
+
+	background: transparent url(cr1.gif) no-repeat top center; 
+
+	display: block; 
+
+	padding-top: 5px; 
+
+	margin-bottom: 5px;
+
+	list-style-type: none;
+
+	}
+
+.sidebar li a:link {
+
+	color: #988F5E;
+
+	}
+
+.sidebar li a:visited {
+
+	color: #B3AE94;
+
+	}
+
+
+
+
+
+.extra1 {
+
+	background: transparent url(cr2.gif) top left no-repeat; 
+
+	position: absolute; 
+
+	top: 40px; 
+
+	right: 0; 
+
+	width: 148px; 
+
+	height: 110px;
+
+	}
+	#button
+	{
+		padding-top:50px;
+	}
+	input
+	{
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		color: #FFFFFF;
+		background-color: transparent;
+		font-size:30px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 10px;
+	}	
+	ol{ 
+		color: #B7A5DF;
+		margin-left: auto;
+		margin-right: auto;
+		
+		text-align:center;
+	}
+	li {
+		list-style-position: inside;
+		left: -10px;
+	}</style>
+<body>
+<h1>Topic17</h1>
+<ol>
+<li>vote: 0.0061539168630985654</li>
+<li>dad: 0.005611116839043104</li>
+<li>game: 0.005027053224494012</li>
+<li>john: 0.004498871029678176</li>
+<li>gun: 0.004407020703516094</li>
+<li>win: 0.004387506363929613</li>
+<li>sheriff: 0.004219834705278445</li>
+<li>town: 0.0038488844727551388</li>
+<li>jack: 0.0037566759053991802</li>
+<li>shoot: 0.0036733992177313906</li>
+<li>johnny: 0.003522941066725615</li>
+<li>island: 0.003380787775703002</li>
+<li>brother: 0.0032634265447519482</li>
+<li>car: 0.0031271232457598117</li>
+<li>tribe: 0.0030790104357155622</li>
+<li>walt: 0.003065539350202169</li>
+<li>damn: 0.0029841232675037453</li>
+<li>figure: 0.002807515254016247</li>
+<li>challenge: 0.002735278582060312</li>
+<li>jimmy: 0.0027123279169105337</li>
+<li>wan: 0.002594039612452856</li>
+<li>jake: 0.0024255671047043502</li>
+<li>maggie: 0.002414241529251449</li>
+<li>mom: 0.002388409813742165</li>
+<li>safe: 0.002377154697538699</li>
+<li>immunity: 0.002323753633152365</li>
+<li>ben: 0.0022015670346841325</li>
+<li>crazy: 0.0021737730762472207</li>
+<li>camp: 0.002171994418207784</li>
+<li>grace: 0.002138791005837117</li>
+<li>russell: 0.0020902106227802474</li>
+<li>tom: 0.0020899569115033867</li>
+<li>hey: 0.002051385412915819</li>
+<li>road: 0.0020453622349047075</li>
+<li>charlie: 0.001919125083337264</li>
+<li>jesse: 0.0018750731285496311</li>
+<li>alive: 0.001836230987691006</li>
+<li>plane: 0.0018183794634850296</li>
+<li>wade: 0.0018054296511779695</li>
+<li>piece: 0.001776214720634961</li>
+<li>food: 0.0017618384527731939</li>
+<li>shot: 0.0017518621718603372</li>
+<li>wife: 0.001744549121266641</li>
+<li>team: 0.0017320884943130225</li>
+<li>survivor: 0.0017181726627922842</li>
+<li>bobby: 0.0016937961027893615</li>
+<li>sir: 0.0016907764438671778</li>
+<li>bag: 0.0016772896769987082</li>
+<li>idol: 0.0016545608646420138</li>
+<li>professor: 0.0016409466627458074</li>
+</ol>
+
+<a href="?" style="font-size: 14.919205349537688px">alive</a>
+<a href="?" style="font-size: 13.6278220384844px">bag</a>
+<a href="?" style="font-size: 17.88752662459287px">ben</a>
+<a href="?" style="font-size: 13.76193520703915px">bobby</a>
+<a href="?" style="font-size: 26.5150360116238px">brother</a>
+<a href="?" style="font-size: 17.647251876540306px">camp</a>
+<a href="?" style="font-size: 25.407584432212094px">car</a>
+<a href="?" style="font-size: 22.223883121188845px">challenge</a>
+<a href="?" style="font-size: 15.592712137899788px">charlie</a>
+<a href="?" style="font-size: 17.66170330706013px">crazy</a>
+<a href="?" style="font-size: 45.589800478859935px">dad</a>
+<a href="?" style="font-size: 24.245722958964432px">damn</a>
+<a href="?" style="font-size: 22.8107993370147px">figure</a>
+<a href="?" style="font-size: 14.314772948411985px">food</a>
+<a href="?" style="font-size: 40.84433813721392px">game</a>
+<a href="?" style="font-size: 17.37747725080748px">grace</a>
+<a href="?" style="font-size: 35.80663178879142px">gun</a>
+<a href="?" style="font-size: 16.6673149682666px">hey</a>
+<a href="?" style="font-size: 13.443152559985382px">idol</a>
+<a href="?" style="font-size: 18.880281330144015px">immunity</a>
+<a href="?" style="font-size: 27.468585056580842px">island</a>
+<a href="?" style="font-size: 30.522641018485032px">jack</a>
+<a href="?" style="font-size: 19.707506281479485px">jake</a>
+<a href="?" style="font-size: 15.234794117819062px">jesse</a>
+<a href="?" style="font-size: 22.037411109457583px">jimmy</a>
+<a href="?" style="font-size: 36.55290711396567px">john</a>
+<a href="?" style="font-size: 28.623567275101074px">johnny</a>
+<a href="?" style="font-size: 19.615487038249093px">maggie</a>
+<a href="?" style="font-size: 19.405606761313756px">mom</a>
+<a href="?" style="font-size: 14.431578782660196px">piece</a>
+<a href="?" style="font-size: 14.774163381933109px">plane</a>
+<a href="?" style="font-size: 13.33253844056298px">professor</a>
+<a href="?" style="font-size: 16.618377209233575px">road</a>
+<a href="?" style="font-size: 16.982766173800755px">russell</a>
+<a href="?" style="font-size: 19.314159992907147px">safe</a>
+<a href="?" style="font-size: 34.28576302827815px">sheriff</a>
+<a href="?" style="font-size: 29.846025705665717px">shoot</a>
+<a href="?" style="font-size: 14.23371659735305px">shot</a>
+<a href="?" style="font-size: 13.737400760203421px">sir</a>
+<a href="?" style="font-size: 13.959992481334604px">survivor</a>
+<a href="?" style="font-size: 14.07305731329702px">team</a>
+<a href="?" style="font-size: 16.980704793362044px">tom</a>
+<a href="?" style="font-size: 31.271827019915104px">town</a>
+<a href="?" style="font-size: 25.01667234228158px">tribe</a>
+<a href="?" style="font-size: 50.0px">vote</a>
+<a href="?" style="font-size: 14.668947365896942px">wade</a>
+<a href="?" style="font-size: 24.907221030108584px">walt</a>
+<a href="?" style="font-size: 21.07632967880824px">wan</a>
+<a href="?" style="font-size: 14.174298744005466px">wife</a>
+<a href="?" style="font-size: 35.6480796014561px">win</a>
+<div id="button"><input type="button" onClick="location.href='/index'" value="Change TV Shows selection" ></div></body>
+</html>
+

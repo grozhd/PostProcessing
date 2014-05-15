@@ -1,0 +1,493 @@
+<html>
+<style>
+html {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+	body {
+		position:relative;
+		top:50px;
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		text-align:center;
+		font-size:20px;
+		background:url(../assets/images/dark-canvas.gif);
+		color: #FFFFFF;
+		}
+p { 
+
+	margin-top: 0; 
+
+	text-align: justify;
+
+	}
+
+h3 { 
+
+	font: italic normal 1.4em georgia, sans-serif;
+
+	letter-spacing: 1px; 
+
+	margin-bottom: 0; 
+
+	color: #7D775C;
+
+	}
+
+a:link { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #B7A5DF;
+
+	}
+
+a:visited { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #D4CDDC;
+
+	}
+
+a:hover, a:focus, a:active { 
+
+	text-decoration: underline; 
+
+	color: #9685BA;
+
+	}
+
+abbr {
+
+	border-bottom: none;
+
+	}
+
+
+
+
+
+/* specific divs */
+
+.page-wrapper { 
+
+	background: url(zen-bg.jpg) no-repeat top left; 
+
+	padding: 0 175px 0 110px;  
+
+	margin: 0; 
+
+	position: relative;
+
+	}
+
+
+
+.intro { 
+
+	min-width: 470px;
+
+	width: 100%;
+
+	}
+
+
+
+header h1 { 
+
+	background: transparent url(h1.gif) no-repeat top left;
+
+	margin-top: 10px;
+
+	display: block;
+
+	width: 219px;
+
+	height: 87px;
+
+	float: left;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header h2 { 
+
+	background: transparent url(h2.gif) no-repeat top left; 
+
+	margin-top: 58px; 
+
+	margin-bottom: 40px; 
+
+	width: 200px; 
+
+	height: 18px; 
+
+	float: right;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header {
+
+	padding-top: 20px;
+
+	height: 87px;
+
+}
+
+
+
+.summary {
+
+	clear: both; 
+
+	margin: 20px 20px 20px 10px; 
+
+	width: 160px; 
+
+	float: left;
+
+	}
+
+.summary p {
+
+	font: italic 1.1em/2.2 georgia; 
+
+	text-align: center;
+
+	}
+
+
+
+.preamble {
+
+	clear: right; 
+
+	padding: 0px 10px 0 10px;
+
+	}
+
+.supporting {	
+
+	padding-left: 10px; 
+
+	margin-bottom: 40px;
+
+	}
+
+
+
+footer { 
+
+	text-align: center; 
+
+	}
+
+footer a:link, footer a:visited { 
+
+	margin-right: 20px; 
+
+	}
+
+
+
+.sidebar {
+
+	margin-left: 600px; 
+
+	position: absolute; 
+
+	top: 0; 
+
+	right: 0;
+
+	}
+
+.sidebar .wrapper { 
+
+	font: 10px verdana, sans-serif; 
+
+	background: transparent url(paper-bg.jpg) top left repeat-y; 
+
+	padding: 10px; 
+
+	margin-top: 150px; 
+
+	width: 130px; 
+
+	}
+
+.sidebar h3.select { 
+
+	background: transparent url(h3.gif) no-repeat top left; 
+
+	margin: 10px 0 5px 0; 
+
+	width: 97px; 
+
+	height: 16px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.archives { 
+
+	background: transparent url(h5.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:57px; 
+
+	height: 14px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.resources { 
+
+	background: transparent url(h6.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:63px; 
+
+	height: 10px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+
+
+
+
+.sidebar ul {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+.sidebar li {
+
+	line-height: 1.3em; 
+
+	background: transparent url(cr1.gif) no-repeat top center; 
+
+	display: block; 
+
+	padding-top: 5px; 
+
+	margin-bottom: 5px;
+
+	list-style-type: none;
+
+	}
+
+.sidebar li a:link {
+
+	color: #988F5E;
+
+	}
+
+.sidebar li a:visited {
+
+	color: #B3AE94;
+
+	}
+
+
+
+
+
+.extra1 {
+
+	background: transparent url(cr2.gif) top left no-repeat; 
+
+	position: absolute; 
+
+	top: 40px; 
+
+	right: 0; 
+
+	width: 148px; 
+
+	height: 110px;
+
+	}
+	#button
+	{
+		padding-top:50px;
+	}
+	input
+	{
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		color: #FFFFFF;
+		background-color: transparent;
+		font-size:30px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 10px;
+	}	
+	ol{ 
+		color: #B7A5DF;
+		margin-left: auto;
+		margin-right: auto;
+		
+		text-align:center;
+	}
+	li {
+		list-style-position: inside;
+		left: -10px;
+	}</style>
+<body>
+<h1>Topic10</h1>
+<ol>
+<li>mom: 0.011170515455333213</li>
+<li>dad: 0.00819554480255957</li>
+<li>party: 0.005337132010993647</li>
+<li>michael: 0.005088305427809855</li>
+<li>school: 0.005070913594646414</li>
+<li>wan: 0.004075662832376312</li>
+<li>date: 0.0037406758348150736</li>
+<li>bye: 0.003627272947972913</li>
+<li>car: 0.0031203252760116738</li>
+<li>dinner: 0.0030231177714209316</li>
+<li>don: 0.002923984625450493</li>
+<li>phone: 0.0028934027997303095</li>
+<li>fun: 0.0028149714795869013</li>
+<li>figure: 0.0027639325168940343</li>
+<li>summer: 0.0026193940408845524</li>
+<li>cool: 0.00261331830823182</li>
+<li>hey: 0.002567493772519863</li>
+<li>office: 0.002552201088581875</li>
+<li>parent: 0.0025476926484647344</li>
+<li>write: 0.0024179974574413438</li>
+<li>david: 0.0023195259786399722</li>
+<li>emily: 0.0023095631384727126</li>
+<li>honey: 0.0022961319489257143</li>
+<li>dan: 0.0022022905938357097</li>
+<li>jim: 0.002169295915047652</li>
+<li>crazy: 0.0021403483510021503</li>
+<li>perfect: 0.0021215319044682202</li>
+<li>glad: 0.0020945679841118106</li>
+<li>class: 0.0020730275620217584</li>
+<li>book: 0.0020360624104325126</li>
+<li>sarah: 0.002024297673200178</li>
+<li>marry: 0.0020219719080291874</li>
+<li>daughter: 0.0020022929481460254</li>
+<li>weird: 0.0019987415167353265</li>
+<li>brother: 0.0019530648466598295</li>
+<li>company: 0.0019320984707247432</li>
+<li>game: 0.0019025636710053833</li>
+<li>chuck: 0.0018934523935153114</li>
+<li>meeting: 0.0018731054936996483</li>
+<li>steve: 0.0018666417890837556</li>
+<li>truth: 0.0018661832064631083</li>
+<li>sister: 0.0018547429738638942</li>
+<li>win: 0.0017756319934051305</li>
+<li>town: 0.0017690710868262431</li>
+<li>kiss: 0.001735879329758277</li>
+<li>boyfriend: 0.0017301972050645746</li>
+<li>donna: 0.0017165594992290304</li>
+<li>dress: 0.0017141530170117771</li>
+<li>kitty: 0.0016984053125780178</li>
+<li>beautiful: 0.0016438383069204</li>
+</ol>
+
+<a href="?" style="font-size: 7.357933989230422px">beautiful</a>
+<a href="?" style="font-size: 9.11355621221768px">book</a>
+<a href="?" style="font-size: 7.74448239198539px">boyfriend</a>
+<a href="?" style="font-size: 8.742053374660365px">brother</a>
+<a href="?" style="font-size: 16.235924664698977px">bye</a>
+<a href="?" style="font-size: 13.96679181228793px">car</a>
+<a href="?" style="font-size: 8.475223910152273px">chuck</a>
+<a href="?" style="font-size: 9.27901478813146px">class</a>
+<a href="?" style="font-size: 8.648206425435314px">company</a>
+<a href="?" style="font-size: 11.697393547690435px">cool</a>
+<a href="?" style="font-size: 9.58034729713511px">crazy</a>
+<a href="?" style="font-size: 36.6838255375526px">dad</a>
+<a href="?" style="font-size: 9.857605061475724px">dan</a>
+<a href="?" style="font-size: 16.743523831879838px">date</a>
+<a href="?" style="font-size: 8.962401762713903px">daughter</a>
+<a href="?" style="font-size: 10.382358754682826px">david</a>
+<a href="?" style="font-size: 13.531684296527176px">dinner</a>
+<a href="?" style="font-size: 13.087957476727164px">don</a>
+<a href="?" style="font-size: 7.683439077153248px">donna</a>
+<a href="?" style="font-size: 7.672667496258545px">dress</a>
+<a href="?" style="font-size: 10.337764392824159px">emily</a>
+<a href="?" style="font-size: 12.37155316576923px">figure</a>
+<a href="?" style="font-size: 12.600007093866608px">fun</a>
+<a href="?" style="font-size: 8.516006618553265px">game</a>
+<a href="?" style="font-size: 9.375431207661px">glad</a>
+<a href="?" style="font-size: 11.492279755514986px">hey</a>
+<a href="?" style="font-size: 10.277645459187191px">honey</a>
+<a href="?" style="font-size: 9.709918596513607px">jim</a>
+<a href="?" style="font-size: 7.769915975227019px">kiss</a>
+<a href="?" style="font-size: 7.602179681722462px">kitty</a>
+<a href="?" style="font-size: 9.050486148621834px">marry</a>
+<a href="?" style="font-size: 8.384149778895651px">meeting</a>
+<a href="?" style="font-size: 22.775607124649344px">michael</a>
+<a href="?" style="font-size: 50.0px">mom</a>
+<a href="?" style="font-size: 11.423828644198155px">office</a>
+<a href="?" style="font-size: 11.403648554321515px">parent</a>
+<a href="?" style="font-size: 23.88937212582032px">party</a>
+<a href="?" style="font-size: 9.496123580650538px">perfect</a>
+<a href="?" style="font-size: 12.951071109027886px">phone</a>
+<a href="?" style="font-size: 9.06089643443313px">sarah</a>
+<a href="?" style="font-size: 22.697760076171665px">school</a>
+<a href="?" style="font-size: 8.30195786971662px">sister</a>
+<a href="?" style="font-size: 8.355217789849405px">steve</a>
+<a href="?" style="font-size: 11.72458894738809px">summer</a>
+<a href="?" style="font-size: 7.9184845762046905px">town</a>
+<a href="?" style="font-size: 8.353165142312767px">truth</a>
+<a href="?" style="font-size: 18.242948808733985px">wan</a>
+<a href="?" style="font-size: 8.94650531001707px">weird</a>
+<a href="?" style="font-size: 7.94785164796213px">win</a>
+<a href="?" style="font-size: 10.823123906457258px">write</a>
+<div id="button"><input type="button" onClick="location.href='/index'" value="Change TV Shows selection" ></div></body>
+</html>
+

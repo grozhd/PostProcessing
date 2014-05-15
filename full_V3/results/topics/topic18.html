@@ -1,0 +1,493 @@
+<html>
+<style>
+html {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+	body {
+		position:relative;
+		top:50px;
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		text-align:center;
+		font-size:20px;
+		background:url(../assets/images/dark-canvas.gif);
+		color: #FFFFFF;
+		}
+p { 
+
+	margin-top: 0; 
+
+	text-align: justify;
+
+	}
+
+h3 { 
+
+	font: italic normal 1.4em georgia, sans-serif;
+
+	letter-spacing: 1px; 
+
+	margin-bottom: 0; 
+
+	color: #7D775C;
+
+	}
+
+a:link { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #B7A5DF;
+
+	}
+
+a:visited { 
+
+	font-weight: bold; 
+
+	text-decoration: none; 
+
+	color: #D4CDDC;
+
+	}
+
+a:hover, a:focus, a:active { 
+
+	text-decoration: underline; 
+
+	color: #9685BA;
+
+	}
+
+abbr {
+
+	border-bottom: none;
+
+	}
+
+
+
+
+
+/* specific divs */
+
+.page-wrapper { 
+
+	background: url(zen-bg.jpg) no-repeat top left; 
+
+	padding: 0 175px 0 110px;  
+
+	margin: 0; 
+
+	position: relative;
+
+	}
+
+
+
+.intro { 
+
+	min-width: 470px;
+
+	width: 100%;
+
+	}
+
+
+
+header h1 { 
+
+	background: transparent url(h1.gif) no-repeat top left;
+
+	margin-top: 10px;
+
+	display: block;
+
+	width: 219px;
+
+	height: 87px;
+
+	float: left;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header h2 { 
+
+	background: transparent url(h2.gif) no-repeat top left; 
+
+	margin-top: 58px; 
+
+	margin-bottom: 40px; 
+
+	width: 200px; 
+
+	height: 18px; 
+
+	float: right;
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+header {
+
+	padding-top: 20px;
+
+	height: 87px;
+
+}
+
+
+
+.summary {
+
+	clear: both; 
+
+	margin: 20px 20px 20px 10px; 
+
+	width: 160px; 
+
+	float: left;
+
+	}
+
+.summary p {
+
+	font: italic 1.1em/2.2 georgia; 
+
+	text-align: center;
+
+	}
+
+
+
+.preamble {
+
+	clear: right; 
+
+	padding: 0px 10px 0 10px;
+
+	}
+
+.supporting {	
+
+	padding-left: 10px; 
+
+	margin-bottom: 40px;
+
+	}
+
+
+
+footer { 
+
+	text-align: center; 
+
+	}
+
+footer a:link, footer a:visited { 
+
+	margin-right: 20px; 
+
+	}
+
+
+
+.sidebar {
+
+	margin-left: 600px; 
+
+	position: absolute; 
+
+	top: 0; 
+
+	right: 0;
+
+	}
+
+.sidebar .wrapper { 
+
+	font: 10px verdana, sans-serif; 
+
+	background: transparent url(paper-bg.jpg) top left repeat-y; 
+
+	padding: 10px; 
+
+	margin-top: 150px; 
+
+	width: 130px; 
+
+	}
+
+.sidebar h3.select { 
+
+	background: transparent url(h3.gif) no-repeat top left; 
+
+	margin: 10px 0 5px 0; 
+
+	width: 97px; 
+
+	height: 16px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.archives { 
+
+	background: transparent url(h5.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:57px; 
+
+	height: 14px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+.sidebar h3.resources { 
+
+	background: transparent url(h6.gif) no-repeat top left; 
+
+	margin: 25px 0 5px 0; 
+
+	width:63px; 
+
+	height: 10px; 
+
+
+
+	text-indent: 100%;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	}
+
+
+
+
+
+.sidebar ul {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+.sidebar li {
+
+	line-height: 1.3em; 
+
+	background: transparent url(cr1.gif) no-repeat top center; 
+
+	display: block; 
+
+	padding-top: 5px; 
+
+	margin-bottom: 5px;
+
+	list-style-type: none;
+
+	}
+
+.sidebar li a:link {
+
+	color: #988F5E;
+
+	}
+
+.sidebar li a:visited {
+
+	color: #B3AE94;
+
+	}
+
+
+
+
+
+.extra1 {
+
+	background: transparent url(cr2.gif) top left no-repeat; 
+
+	position: absolute; 
+
+	top: 40px; 
+
+	right: 0; 
+
+	width: 148px; 
+
+	height: 110px;
+
+	}
+	#button
+	{
+		padding-top:50px;
+	}
+	input
+	{
+		font-family: 'Dosis-Medium', Helvetica, sans-serif;
+		color: #FFFFFF;
+		background-color: transparent;
+		font-size:30px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 10px;
+	}	
+	ol{ 
+		color: #B7A5DF;
+		margin-left: auto;
+		margin-right: auto;
+		
+		text-align:center;
+	}
+	li {
+		list-style-position: inside;
+		left: -10px;
+	}</style>
+<body>
+<h1>Topic18</h1>
+<ol>
+<li>fuck: 0.021389010741492003</li>
+<li>shit: 0.008191618583324466</li>
+<li>fucking: 0.007840822086993092</li>
+<li>car: 0.005870705099535606</li>
+<li>sort: 0.003773324671986249</li>
+<li>dad: 0.003715932464900004</li>
+<li>mum: 0.0036714703150587773</li>
+<li>mate: 0.003411755137626269</li>
+<li>bloody: 0.0029706430214515305</li>
+<li>round: 0.0029613218091104686</li>
+<li>jesus: 0.0026104147033266774</li>
+<li>sir: 0.002530196456959444</li>
+<li>phone: 0.0024646153151493947</li>
+<li>doctor: 0.0022491486827627308</li>
+<li>laugh: 0.002189430743235956</li>
+<li>laughter: 0.0019240440558866438</li>
+<li>police: 0.0019204941442720132</li>
+<li>top: 0.0017895669912124635</li>
+<li>ring: 0.0017737304758256526</li>
+<li>lovely: 0.001752901715416296</li>
+<li>dog: 0.001738488044196672</li>
+<li>write: 0.0016699042526967848</li>
+<li>christ: 0.0016537246442033336</li>
+<li>book: 0.0016174371243345195</li>
+<li>wife: 0.0015286891291458817</li>
+<li>piss: 0.0014797083817672863</li>
+<li>road: 0.0014393913154510136</li>
+<li>school: 0.0014266181492655584</li>
+<li>funny: 0.0014250506465948944</li>
+<li>stupid: 0.001394422440632665</li>
+<li>tony: 0.0013674025539960554</li>
+<li>body: 0.0013659765190341274</li>
+<li>music: 0.0013608139477174408</li>
+<li>brilliant: 0.0013493965189591629</li>
+<li>jack: 0.0013472971505771245</li>
+<li>party: 0.0013295388826420568</li>
+<li>bastard: 0.0013294052956418318</li>
+<li>mark: 0.0013167871609231715</li>
+<li>tea: 0.001289116064158377</li>
+<li>sake: 0.001275753660672409</li>
+<li>frank: 0.0012694139428795423</li>
+<li>alan: 0.0012572435383725693</li>
+<li>wan: 0.0012569674678849236</li>
+<li>james: 0.0012385450600446335</li>
+<li>bye: 0.0012340526673842828</li>
+<li>sell: 0.001222819414813443</li>
+<li>win: 0.0012070189619861826</li>
+<li>applause: 0.0012000806245927702</li>
+<li>death: 0.0011923916620195545</li>
+<li>beautiful: 0.0011730044806364383</li>
+</ol>
+
+<a href="?" style="font-size: 2.938994125459188px">alan</a>
+<a href="?" style="font-size: 2.805367296077803px">applause</a>
+<a href="?" style="font-size: 3.107682986625819px">bastard</a>
+<a href="?" style="font-size: 2.742072774691156px">beautiful</a>
+<a href="?" style="font-size: 6.944320748057915px">bloody</a>
+<a href="?" style="font-size: 3.1931736711513823px">body</a>
+<a href="?" style="font-size: 3.781000308716695px">book</a>
+<a href="?" style="font-size: 3.1544154502234703px">brilliant</a>
+<a href="?" style="font-size: 2.8847820086189753px">bye</a>
+<a href="?" style="font-size: 13.723648023017661px">car</a>
+<a href="?" style="font-size: 3.865827793978603px">christ</a>
+<a href="?" style="font-size: 8.68654588519973px">dad</a>
+<a href="?" style="font-size: 2.787393200253212px">death</a>
+<a href="?" style="font-size: 5.257720214239885px">doctor</a>
+<a href="?" style="font-size: 4.063974872910374px">dog</a>
+<a href="?" style="font-size: 2.967444259628703px">frank</a>
+<a href="?" style="font-size: 50.0px">fuck</a>
+<a href="?" style="font-size: 18.32909006816028px">fucking</a>
+<a href="?" style="font-size: 3.3312682475549806px">funny</a>
+<a href="?" style="font-size: 3.1495078637824436px">jack</a>
+<a href="?" style="font-size: 2.8952836459191897px">james</a>
+<a href="?" style="font-size: 6.102233373193833px">jesus</a>
+<a href="?" style="font-size: 5.118120631424842px">laugh</a>
+<a href="?" style="font-size: 4.497739701804533px">laughter</a>
+<a href="?" style="font-size: 4.097668977312462px">lovely</a>
+<a href="?" style="font-size: 3.0781862163656997px">mark</a>
+<a href="?" style="font-size: 7.975486054172415px">mate</a>
+<a href="?" style="font-size: 8.58260898419342px">mum</a>
+<a href="?" style="font-size: 3.1811053913719163px">music</a>
+<a href="?" style="font-size: 3.107995266145988px">party</a>
+<a href="?" style="font-size: 5.761405576295189px">phone</a>
+<a href="?" style="font-size: 3.459038848619673px">piss</a>
+<a href="?" style="font-size: 4.489441254397276px">police</a>
+<a href="?" style="font-size: 4.146359308672555px">ring</a>
+<a href="?" style="font-size: 3.3647916980535584px">road</a>
+<a href="?" style="font-size: 6.922531025163018px">round</a>
+<a href="?" style="font-size: 2.982264294714684px">sake</a>
+<a href="?" style="font-size: 3.3349325186370073px">school</a>
+<a href="?" style="font-size: 2.8585226067546134px">sell</a>
+<a href="?" style="font-size: 19.149129154051412px">shit</a>
+<a href="?" style="font-size: 5.914711268182169px">sir</a>
+<a href="?" style="font-size: 8.820708721854235px">sort</a>
+<a href="?" style="font-size: 3.259670251901038px">stupid</a>
+<a href="?" style="font-size: 3.0135009041293648px">tea</a>
+<a href="?" style="font-size: 3.1965072403827115px">tony</a>
+<a href="?" style="font-size: 4.183379523347771px">top</a>
+<a href="?" style="font-size: 2.938348769554274px">wan</a>
+<a href="?" style="font-size: 3.573538644731278px">wife</a>
+<a href="?" style="font-size: 2.8215866936863914px">win</a>
+<a href="?" style="font-size: 3.903650039918348px">write</a>
+<div id="button"><input type="button" onClick="location.href='/index'" value="Change TV Shows selection" ></div></body>
+</html>
+
